@@ -1,0 +1,15 @@
+/Users/muhammadhuzaifah/Desktop/iFooty/Backend/src/main/java/com/ifooty/IFootyApplication.java
+/Users/muhammadhuzaifah/Desktop/iFooty/Backend/src/main/java/com/ifooty/genai/GeminiConfiguration.java
+/Users/muhammadhuzaifah/Desktop/iFooty/Backend/src/main/java/com/ifooty/genai/GenAiService.java
+/Users/muhammadhuzaifah/Desktop/iFooty/Backend/src/main/java/com/ifooty/news/News.java
+/Users/muhammadhuzaifah/Desktop/iFooty/Backend/src/main/java/com/ifooty/news/NewsEntityListener.java
+/Users/muhammadhuzaifah/Desktop/iFooty/Backend/src/main/java/com/ifooty/news/NewsRepository.java
+/Users/muhammadhuzaifah/Desktop/iFooty/Backend/src/main/java/com/ifooty/news/NewsService.java
+/Users/muhammadhuzaifah/Desktop/iFooty/Backend/src/main/java/com/ifooty/player/Player.java
+/Users/muhammadhuzaifah/Desktop/iFooty/Backend/src/main/java/com/ifooty/player/PlayerController.java
+/Users/muhammadhuzaifah/Desktop/iFooty/Backend/src/main/java/com/ifooty/player/PlayerRepository.java
+/Users/muhammadhuzaifah/Desktop/iFooty/Backend/src/main/java/com/ifooty/player/PlayerService.java
+/Users/muhammadhuzaifah/Desktop/iFooty/Backend/src/main/java/com/ifooty/team/Team.java
+/Users/muhammadhuzaifah/Desktop/iFooty/Backend/src/main/java/com/ifooty/team/TeamController.java
+/Users/muhammadhuzaifah/Desktop/iFooty/Backend/src/main/java/com/ifooty/team/TeamRepository.java
+/Users/muhammadhuzaifah/Desktop/iFooty/Backend/src/main/java/com/ifooty/team/TeamService.java

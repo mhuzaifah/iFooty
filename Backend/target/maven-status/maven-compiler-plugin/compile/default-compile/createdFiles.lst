@@ -1,0 +1,15 @@
+com/fs/football_snap/genai/GenAiService.class
+com/fs/football_snap/news/News.class
+com/fs/football_snap/news/NewsService.class
+com/fs/football_snap/player/PlayerService.class
+com/fs/football_snap/news/NewsEntityListener.class
+com/fs/football_snap/team/TeamService.class
+com/fs/football_snap/genai/GeminiConfiguration.class
+com/fs/football_snap/team/Team.class
+com/fs/football_snap/player/PlayerController.class
+com/fs/football_snap/player/PlayerRepository.class
+com/fs/football_snap/player/Player.class
+com/fs/football_snap/team/TeamRepository.class
+com/fs/football_snap/team/TeamController.class
+com/fs/football_snap/news/NewsRepository.class
+com/ifooty/IFootyApplication.class
