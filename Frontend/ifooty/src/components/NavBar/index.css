@@ -1,8 +1,44 @@
 .verticalNavBar {
-    height: 100vh;
-    width: 10vw;
-    justify-content: space-evenly;
-    align-items: center;
+    height: 100vh !important;
+    width: 12.5% !important;
     background-color: white;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 0 !important;
+}
+
+.navOptions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70%;
+    padding: 0;
+}
+
+.navOption {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    height: 7.5%;
+    padding-left: 10px;
+    text-decoration: none;
+    color: #0a0a0a;
+    background: whitesmoke;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid white;
+}
+.navOption:hover {
+    color: #38b6ff;
+}
+.navOption.active {
+    color: #38b6ff;
+    background: #0a0a0a;
+    border: 1px solid #38b6ff;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 25px;
+}
+
+.navIcon {
+    margin-right: 8px;
 }

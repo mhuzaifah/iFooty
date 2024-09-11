@@ -1,5 +1,4 @@
 .App {
-  background-color: whitesmoke;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -7,38 +6,62 @@
   align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.designBackground {
+  background-image: url("images/background.jpg");
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the background fixed during scrolling */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+.simpleBackground {
   background-color: whitesmoke;
-  width: 100vw;
-  height: 100vh;
+}
+
+.mainButton {
+  border-radius: 20px !important;
+}
+
+.secondaryButton {
+  color: #0a0a0a !important;
+  background: whitesmoke !important;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 7.5px;
+  border: 1px solid white !important;
+}
+.secondaryButton:hover {
+  color: #38b6ff !important;
+}
+
+.card  {
+  text-align: center;
+  padding: 5px;
+  border-radius: 35px !important;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  background-color: white !important;
+  border-color: aliceblue !important;
+}
+
+.mainContentContainer {
+  width: 87.5%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/*.App-header {*/
+/*  background-color: whitesmoke;*/
+/*  width: 100vw;*/
+/*  height: 100vh;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  font-size: calc(10px + 2vmin);*/
+/*  color: white;*/
+/*}*/
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
