@@ -1,5 +1,52 @@
-.card {
-    background-color: white;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 2rem;
+.infoContainer {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsCardContainer {
+    padding: 10px;
+}
+
+.newsCardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    border: 1.5px solid black !important;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2.5px 12.5px;
+    text-align: left;
+    transition: border-radius 0.25s ease-in;
+}
+.newsCardHeader.active {
+    border-radius: 10px 10px 0 0;
+    transition: border-radius 0.25s ease-in;
+}
+
+.newsCardBody {
+    text-align: left;
+    padding: 2.5%;
+    background-color: whitesmoke;
+    border-radius: 0 0 10px 10px;
+    border-bottom: 1.5px solid black !important;
+    border-right: 1.5px solid black !important;
+    border-left: 1.5px solid black !important;
+    border-top: none;
+    /*box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 12.5px;*/
+    transition: box-shadow 1s linear;
+}
+
+.dropDownButton {
+    width: 7.5% ;
+    background-color: #0a0a0a !important;
+    border-color: #000000 !important;
+}
+
+.teamRow {
+    color: white;
+    background-color: #0a0a0a;
 }

@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
+import {PlayersProvider} from "./contexts/PlayersContext";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
