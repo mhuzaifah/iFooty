@@ -1,4 +1,4 @@
-package com.fs.football_snap.genai;
+package com.ifooty.genai;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import org.springframework.beans.factory.annotation.Autowired;

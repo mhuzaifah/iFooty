@@ -1,4 +1,4 @@
-package com.fs.football_snap.player;
+package com.ifooty.player;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -18,7 +18,7 @@ public class Player {
     private Double age;
     private Double mp;
     private Integer starts;
-    private Double min;
+    private Double mins;
     private Double nineties;
     private Double gls;
     private Double ast;
@@ -28,7 +28,7 @@ public class Player {
 
     public Player() {}
 
-    public Player(Integer id, String player, String nation, String pos, Double age, Double mp, Integer starts, Double min, Double nineties, Double gls, Double ast, Double xG, Double xAG, String team) {
+    public Player(Integer id, String player, String nation, String pos, Double age, Double mp, Integer starts, Double mins, Double nineties, Double gls, Double ast, Double xG, Double xAG, String team) {
         this.id = id;
         this.name = player;
         this.nation = nation;
@@ -36,7 +36,7 @@ public class Player {
         this.age = age;
         this.mp = mp;
         this.starts = starts;
-        this.min = min;
+        this.mins = mins;
         this.nineties = nineties;
         this.gls = gls;
         this.ast = ast;
@@ -45,51 +45,111 @@ public class Player {
         this.team = team;
     }
 
-    public Player(Integer id, String player, String nation, String pos, Double age) {
-        this.id = id;
-        this.name = player;
-        this.nation = nation;
-        this.pos = pos;
-        this.age = age;
+    public String getNation() {
+        return nation;
     }
 
     public Integer getId() {
         return id;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getTeam() {
-        return this.team;
-    }
-
     public String getName() {
-        return this.name;
+        return name;
+    }
+
+    public Double getAge() {
+        return age;
     }
 
     public String getPos() {
-        return this.pos;
+        return pos;
     }
 
-    public String getNation() {
-        return this.nation;
+    public Double getMp() {
+        return mp;
+    }
+
+    public Integer getStarts() {
+        return starts;
+    }
+
+    public Double getMins() {
+        return mins;
+    }
+
+    public Double getNineties() {
+        return nineties;
+    }
+
+    public Double getGls() {
+        return gls;
+    }
+
+    public Double getAst() {
+        return ast;
+    }
+
+    public Double getxG() {
+        return xG;
+    }
+
+    public Double getxAG() {
+        return xAG;
+    }
+
+    public String getTeam() {
+        return team;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public void setTeam(String team) {
-        this.team = team;
+    public void setNation(String nation) {
+        this.nation = nation;
     }
 
     public void setPos(String pos) {
         this.pos = pos;
     }
 
-    public void setNation(String nation) {
-        this.nation = nation;
+    public void setAge(Double age) {
+        this.age = age;
+    }
+
+    public void setMp(Double mp) {
+        this.mp = mp;
+    }
+
+    public void setStarts(Integer starts) {
+        this.starts = starts;
+    }
+
+    public void setMins(Double mins) {
+        this.mins = mins;
+    }
+
+    public void setNineties(Double nineties) {
+        this.nineties = nineties;
+    }
+
+    public void setGls(Double gls) {
+        this.gls = gls;
+    }
+
+    public void setAst(Double ast) {
+        this.ast = ast;
+    }
+
+    public void setxAG(Double xAG) {
+        this.xAG = xAG;
+    }
+
+    public void setxG(Double xG) {
+        this.xG = xG;
+    }
+
+    public void setTeam(String team) {
+        this.team = team;
     }
 }

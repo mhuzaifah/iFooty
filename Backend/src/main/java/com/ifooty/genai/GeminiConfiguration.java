@@ -1,4 +1,4 @@
-package com.fs.football_snap.genai;
+package com.ifooty.genai;
 
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;

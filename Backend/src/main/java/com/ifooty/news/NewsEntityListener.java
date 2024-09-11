@@ -1,7 +1,7 @@
-package com.fs.football_snap.news;
+package com.ifooty.news;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fs.football_snap.genai.GenAiService;
+import com.ifooty.genai.GenAiService;
 import jakarta.persistence.PostPersist;
 
 import java.io.IOException;
