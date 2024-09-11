@@ -1,4 +1,4 @@
-package com.fs.football_snap.player;
+package com.ifooty.player;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin
 @RequestMapping(path = "api/players")
 public class PlayerController {
     private final PlayerService playerService;
@@ -17,31 +18,32 @@ public class PlayerController {
         this.playerService = playerService;
     }
 
-    @GetMapping
+    @GetMapping("/filtered")
     public List<Player> getPlayers(
+            @RequestParam(required = false) String position,
             @RequestParam(required = false) String name,
+            @RequestParam(required = false) String nation,
             @RequestParam(required = false) String team,
-            @RequestParam(required = false) String pos,
-            @RequestParam(required = false) String nation
+            @RequestParam(required = false) Integer minAge,
+            @RequestParam(required = false) Integer maxAge,
+            @RequestParam(required = false) Integer minGoals,
+            @RequestParam(required = false) Integer maxGoals,
+            @RequestParam(required = false) Integer minAssists,
+            @RequestParam(required = false) Integer maxAssists,
+            @RequestParam(required = false) Integer minMatches,
+            @RequestParam(required = false) Integer maxMatches,
+            @RequestParam(required = false) Double minXG,
+            @RequestParam(required = false) Double maxXG,
+            @RequestParam(required = false) Double minXAG,
+            @RequestParam(required = false) Double maxXAG,
+            @RequestParam(required = false) Integer minStarts,
+            @RequestParam(required = false) Integer maxStarts,
+            @RequestParam(required = false) Integer minMinutes,
+            @RequestParam(required = false) Integer maxMinutes,
+            @RequestParam(required = false) Integer minNineties,
+            @RequestParam(required = false) Integer maxNineties
     ) {
-        if(team != null && pos != null) {
-            return playerService.getPlayersByTeamAndPos(team, pos);
-        }
-        else if(team != null) {
-            return playerService.getPlayersFromTeam(team);
-        }
-        else if(name != null) {
-            return playerService.getPlayersByName(name);
-        }
-        else if(pos != null) {
-            return playerService.getPlayersByPos(pos);
-        }
-        else if(nation != null) {
-            return playerService.getPlayersByPos(nation);
-        }
-        else {
-            return playerService.getPlayers(); // Get all players since no params were provided
-        }
+        return playerService.getPlayersFiltered(position, name, nation, team, minAge, maxAge, minGoals, maxGoals, minAssists, maxAssists, minMatches, maxMatches, minXG, maxXG, minXAG, maxXAG, minStarts, maxStarts, minMinutes, maxMinutes, minNineties, maxNineties);
     }
 
     @PostMapping

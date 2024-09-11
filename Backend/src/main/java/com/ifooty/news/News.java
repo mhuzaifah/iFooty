@@ -1,6 +1,6 @@
-package com.fs.football_snap.news;
+package com.ifooty.news;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fs.football_snap.team.Team;
+import com.ifooty.team.Team;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
@@ -18,7 +18,7 @@ public class News implements Serializable {
     private String body;
     private Date date;
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "team", nullable = false)
+    @JoinColumn(name = "team", referencedColumnName = "name", nullable = false)
     @JsonIgnore // If not ignored, will create an infinite cycle Team and News list JSON object for each News entity
     private Team team;
     private String summary;

@@ -1,4 +1,4 @@
-package com.fs.football_snap.team;
+package com.ifooty.team;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

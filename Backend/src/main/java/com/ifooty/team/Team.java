@@ -1,5 +1,5 @@
-package com.fs.football_snap.team;
-import com.fs.football_snap.news.News;
+package com.ifooty.team;
+import com.ifooty.news.News;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;

@@ -1,8 +1,8 @@
-package com.fs.football_snap.news;
+package com.ifooty.news;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fs.football_snap.genai.GenAiService;
-import com.fs.football_snap.team.Team;
+import com.ifooty.genai.GenAiService;
+import com.ifooty.team.Team;
 import jakarta.persistence.PostPersist;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
