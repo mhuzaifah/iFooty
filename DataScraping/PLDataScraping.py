@@ -48,47 +48,52 @@ for placement in range(len(pl_teams_urls)):
     data = requests.get(team_url).text
     soup = BeautifulSoup(data, 'lxml')
 
-    # Parsing each teams' Player Stats
-    player_stats_table = soup.find_all('table', class_='stats_table')[0]
-    players_data = pd.read_html(StringIO(str(player_stats_table)))[0]
-    players_data["Team"] = name
-    pl_players.append(players_data)
+    # # Parsing each teams' Player Stats
+    # player_stats_table = soup.find_all('table', class_='stats_table')[0]
+    # players_data = pd.read_html(StringIO(str(player_stats_table)))[0]
+    # players_data["Team"] = name
+    # pl_players.append(players_data)
 
-    # Parsing each teams' necessary Team Stats
-    pTags = soup.find_all('p')
-    club_stats_pTags = pTags[0:3] if placement < 17 else pTags[0:1] + pTags[2:4]
-    for i in range(3):
-        pTag = club_stats_pTags[i]
-        text = re.sub(r'[ \n]', '', pTag.get_text())
-        splitText = text.split(',')
+    # # Parsing each teams' necessary Team Stats
+    # pTags = soup.find_all('p')
+    # club_stats_pTags = pTags[0:3] if placement < 17 else pTags[0:1] + pTags[2:4]
+    # for i in range(3):
+    #     pTag = club_stats_pTags[i]
+    #     text = re.sub(r'[ \n]', '', pTag.get_text())
+    #     splitText = text.split(',')
 
-        if i == 0:
-            pl_teams["record"] = splitText[0].split(':')[1]
-            pl_teams["points_per_game"] = splitText[1][splitText[1].find('(')+1:splitText[1].find('pergame')]
-        elif i == 1:
-            pl_teams["home_record"] = splitText[0].split(':')[1]
-            pl_teams["away_record"] = splitText[1].split(':')[1]
-        else:
-            goalsData = splitText[0].split(':')[1].split('(')
-            pl_teams["goals"] = goalsData[0]
-            pl_teams["goals_per_game"] = goalsData[1][0:goalsData[1].find('pergame')]
+    #     if i == 0:
+    #         pl_teams["record"].append(splitText[0].split(':')[1])
+    #         pl_teams["points_per_game"].append(splitText[1][splitText[1].find('(')+1:splitText[1].find('pergame')])
+    #     elif i == 1:
+    #         pl_teams["home_record"].append(splitText[0].split(':')[1])
+    #         pl_teams["away_record"].append(splitText[1].split(':')[1])
+    #     else:
+    #         goalsData = splitText[0].split(':')[1].split('(')
+    #         pl_teams["goals"].append(goalsData[0])
+    #         pl_teams["goals_per_game"].append(goalsData[1][0:goalsData[1].find('pergame')])
 
-    # Sleep to improve scraping perfomance/accuracy
-    time.sleep(5)
+    # # Sleep to improve scraping perfomance/accuracy
+    # time.sleep(5)
 
+print(teams)
 #Parsing another website to get each teams' relevant news data
 for team in teams:
     team: str
     teamName = team.lower().replace(' ', '-')
+    print(team, teamName)
     page = 1
     weekAgoReached = False
-
+    print(weekAgoReached)
     while not weekAgoReached:
+        print(page)
         link = f'https://www.football365.com/{teamName}/news' if page == 1 else f'https://www.football365.com/{teamName}/page/{page}'
         html = requests.get(link).text
         soup = BeautifulSoup(html, 'lxml')
         articleComponents = [article for article in soup.find_all(class_='news-card') if not article.find_parent('aside')] # only want news articles in the main section of the page
 
+        print(len(articleComponents))
+        
         #Parsing each article component/card one by one
         for articleComponent in articleComponents:
 
@@ -115,7 +120,8 @@ for team in teams:
             linkTag = articleComponent.find('a', href=True)
             if linkTag:
                 article = newspaper.article(linkTag['href'])
-                pl_news['title'].append(article.title)
+                title = article.title.replace('"', '')
+                pl_news['title'].append(title)
                 bodyLines = article.text.splitlines() # removing unnecassary lines from article body
                 for i, line in enumerate(bodyLines):
                     if line.isupper():
@@ -131,16 +137,16 @@ for team in teams:
 
 
 #Converting team and player data into csv files
-players_df = pd.concat(pl_players)
-players_df.columns = players_df.columns.droplevel() # removing header and making second row new header
-players_df = players_df.reset_index(drop=True) # resetting the index and dropping the old index column
-players_df = players_df.drop(players_df.columns[[10,11,12,13,14,15,17,19,20,21,22,27,30,33]], axis=1) # remove unwanted columns
-players_df = players_df.loc[:, ~players_df.columns.duplicated()] # retain only the first occurrence of each column
-players_df.rename(columns={'':'Team'}, inplace=True) # naming Team column
-players_df.to_csv('pl_players.csv')
+# players_df = pd.concat(pl_players)
+# players_df.columns = players_df.columns.droplevel() # removing header and making second row new header
+# players_df = players_df.reset_index(drop=True) # resetting the index and dropping the old index column
+# players_df = players_df.drop(players_df.columns[[10,11,12,13,14,15,17,19,20,21,22,27,30,33]], axis=1) # remove unwanted columns
+# players_df = players_df.loc[:, ~players_df.columns.duplicated()] # retain only the first occurrence of each column
+# players_df.rename(columns={'':'Team'}, inplace=True) # naming Team column
+# players_df.to_csv('pl_players.csv')
 
-teams_df = pd.DataFrame(pl_teams, index=teams)
-teams_df.to_csv('pl_teams.csv')
+# teams_df = pd.DataFrame(pl_teams, index=teams)
+# teams_df.to_csv('pl_teams.csv')
 
 news_df = pd.DataFrame(pl_news)
 news_df.to_csv('pl_news.csv')
