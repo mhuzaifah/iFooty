@@ -1,5 +1,5 @@
 import {Container, Image, Nav} from "react-bootstrap";
-import {useState} from "react";
+import React, {useState} from "react";
 import Logo from '../../images/logo.png';
 import Club from '../../images/clubsHero.png';
 import "./index.css"
@@ -23,11 +23,12 @@ const VerticalNavBar = () => {
     ]
 
     return (
-        <Nav className="verticalNavBar flex-column" >
-            <Image src={Logo} alt='iFooty' style={{width:'65px', height:'65px'}}></Image>
-            <Container className="navOptions" fluid >
+        <Nav className="verticalNavBar flex-column">
+            <Image src={Logo} alt='iFooty' style={{width: '65px', height: '65px'}}></Image>
+            <div className="divider"></div>
+            <Container className="navOptions" fluid>
                 {
-                    navOptions.map( (navOpt, idx) => (
+                    navOptions.map((navOpt, idx) => (
                         <Link
                             key={idx}
                             to={`/${navOpt.link}`}
@@ -40,7 +41,7 @@ const VerticalNavBar = () => {
                     ))
                 }
             </Container>
-            <Image src={Club} alt='club' style={{width:'75px', height:'75px'}}></Image>
+            <Image src={Club} alt='club' style={{width: '75px', height: '75px'}}></Image>
         </Nav>
     );
 };
