@@ -104,7 +104,6 @@ def importCSVtoPostgreSQL(csvFile, tableName, pk):
     conn = psycopg2.connect(database = "ifooty", 
                             user = "postgres", 
                             host= 'localhost',
-                            password = "Huzi@1975",
                             port = 5432)
     curr = conn.cursor()    
     
