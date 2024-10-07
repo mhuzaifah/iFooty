@@ -44,7 +44,7 @@ const MyTeam = () => {
                 <Container className="card infoContainer"  style={{height:'75vh'}}>
                     <Stack direction="vertical" style={{overflow:'auto'}} gap={5} >
                         {
-                            news
+                            news && news.length !== 0
                             ?
                             news.map((newsItem) => (
                                 <div className="newsCardContainer" key={newsItem.id} >
@@ -62,7 +62,7 @@ const MyTeam = () => {
                                 </div>
                             ))
                             :
-                            <h2>Loading...</h2>
+                            <h2 >Loading...</h2>
                         }
                     </Stack>
                 </Container>

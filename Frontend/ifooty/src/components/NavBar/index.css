@@ -1,9 +1,13 @@
 .verticalNavBar {
-    height: 100vh !important;
+    height: 96vh !important;
     width: 12.5% !important;
     background-color: white;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     margin: 0 !important;
+    margin-left: 20px !important;
+    padding: 10px 0 10px 0;
+    border-radius: 25px;
+    border: 2px solid whitesmoke;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .navOptions {
@@ -26,19 +30,26 @@
     color: #0a0a0a;
     background: whitesmoke;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border: 1px solid white;
+    /*box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/
+    border: 1px solid whitesmoke;
 }
 .navOption:hover {
-    color: #38b6ff;
+    color: silver;
 }
 .navOption.active {
-    color: #38b6ff;
+    color: silver;
     background: #0a0a0a;
-    border: 1px solid #38b6ff;
-    box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 25px;
+    border: 1px solid whitesmoke;
+    /*box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 25px;*/
 }
 
 .navIcon {
     margin-right: 8px;
+}
+
+.divider {
+    width: 80% !important;
+    height: 2px;
+    background-color: whitesmoke !important;
+    margin-bottom: 50px;
 }

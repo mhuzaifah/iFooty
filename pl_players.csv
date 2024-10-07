@@ -1,0 +1,560 @@
+,Player,Nation,Pos,Age,MP,Starts,Min,nineties,Gls,Ast,xG,xAG,Team
+0,Virgil van Dijk,nl NED,DF,33,6.0,6,540.0,6.0,0.0,0.0,0.2,0.0,Liverpool
+1,Ryan Gravenberch,nl NED,MF,22,6.0,6,539.0,6.0,0.0,0.0,0.1,0.2,Liverpool
+2,Mohamed Salah,eg EGY,FW,32,6.0,6,532.0,5.9,4.0,4.0,3.8,2.1,Liverpool
+3,Alexis Mac Allister,ar ARG,MF,25,6.0,6,509.0,5.7,0.0,0.0,0.2,0.9,Liverpool
+4,Andrew Robertson,sct SCO,DF,30,6.0,6,502.0,5.6,0.0,0.0,0.4,1.5,Liverpool
+5,Trent Alexander-Arnold,eng ENG,DF,25,6.0,6,492.0,5.5,0.0,1.0,0.3,1.7,Liverpool
+6,Dominik Szoboszlai,hu HUN,MF,23,6.0,6,492.0,5.5,0.0,1.0,1.2,1.0,Liverpool
+7,Luis Díaz,co COL,FW,27,6.0,6,428.0,4.8,5.0,1.0,2.6,1.0,Liverpool
+8,Ibrahima Konaté,fr FRA,DF,25,6.0,5,479.0,5.3,1.0,1.0,0.4,0.2,Liverpool
+9,Alisson,br BRA,GK,32,5.0,5,450.0,5.0,0.0,0.0,0.0,0.0,Liverpool
+10,Diogo Jota,pt POR,FW,27,5.0,5,373.0,4.1,1.0,2.0,1.9,0.8,Liverpool
+11,Darwin Núñez,uy URU,FW,25,4.0,1,136.0,1.5,1.0,0.0,0.5,0.0,Liverpool
+12,Caoimhín Kelleher,ie IRL,GK,25,1.0,1,90.0,1.0,0.0,0.0,0.0,0.0,Liverpool
+13,Jarell Quansah,eng ENG,DF,21,1.0,1,45.0,0.5,0.0,0.0,0.0,0.0,Liverpool
+14,Cody Gakpo,nl NED,FW,25,6.0,0,124.0,1.4,0.0,0.0,0.4,0.3,Liverpool
+15,Conor Bradley,nir NIR,DF,21,4.0,0,79.0,0.9,0.0,0.0,0.2,0.0,Liverpool
+16,Curtis Jones,eng ENG,MF,23,3.0,0,64.0,0.7,0.0,0.0,0.2,0.0,Liverpool
+17,Kostas Tsimikas,gr GRE,DF,28,3.0,0,36.0,0.4,0.0,0.0,0.0,0.0,Liverpool
+18,Federico Chiesa,it ITA,FW,26,1.0,0,19.0,0.2,0.0,0.0,0.2,0.0,Liverpool
+19,Harvey Elliott,eng ENG,FW,21,1.0,0,8.0,0.1,0.0,0.0,0.0,0.0,Liverpool
+20,Joe Gomez,eng ENG,DF,27,1.0,0,2.0,0.0,0.0,0.0,0.0,0.0,Liverpool
+21,Wataru Endo,jp JPN,MF,31,1.0,0,1.0,0.0,0.0,0.0,0.0,0.0,Liverpool
+22,Vitezslav Jaros,cz CZE,GK,23,0.0,0,,,,,,,Liverpool
+23,Squad Total,,,27.6,6.0,66,540.0,6.0,12.0,10.0,12.4,9.7,Liverpool
+24,Opponent Total,,,26.3,6.0,66,540.0,6.0,2.0,1.0,4.5,3.7,Liverpool
+25,Manuel Akanji,ch SUI,DF,29,,6,540.0,6.0,0.0,0.0,0.1,0.2,Manchester City
+26,Ederson,br BRA,GK,31,,6,540.0,6.0,0.0,1.0,0.0,0.4,Manchester City
+27,Erling Haaland,no NOR,FW,24,,6,539.0,6.0,10.0,0.0,6.2,0.2,Manchester City
+28,Joško Gvardiol,hr CRO,DF,22,,5,492.0,5.5,1.0,0.0,0.3,0.5,Manchester City
+29,Rúben Dias,pt POR,DF,27,,5,457.0,5.1,0.0,0.0,0.5,0.1,Manchester City
+30,Bernardo Silva,pt POR,"MF,FW",30,,5,457.0,5.1,0.0,2.0,0.7,1.6,Manchester City
+31,Mateo Kovačić,hr CRO,MF,30,,5,434.0,4.8,1.0,0.0,0.4,0.3,Manchester City
+32,Rico Lewis,eng ENG,"MF,DF",19,,5,395.0,4.4,0.0,1.0,0.6,0.1,Manchester City
+33,Kevin De Bruyne,be BEL,MF,33,,4,356.0,4.0,1.0,1.0,1.2,1.7,Manchester City
+34,Jeremy Doku,be BEL,FW,22,,4,306.0,3.4,0.0,0.0,0.2,1.0,Manchester City
+35,Sávio,br BRA,FW,20,,4,291.0,3.2,0.0,2.0,0.8,1.5,Manchester City
+36,İlkay Gündoğan,de GER,MF,33,,3,288.0,3.2,0.0,0.0,0.4,0.7,Manchester City
+37,Jack Grealish,eng ENG,FW,29,,3,267.0,3.0,0.0,1.0,0.5,0.9,Manchester City
+38,Kyle Walker,eng ENG,DF,34,,3,260.0,2.9,0.0,0.0,0.1,0.3,Manchester City
+39,John Stones,eng ENG,"DF,MF",30,,1,137.0,1.5,1.0,0.0,0.2,0.0,Manchester City
+40,Rodri,es ESP,MF,28,,1,65.0,0.7,0.0,0.0,0.0,0.0,Manchester City
+41,Phil Foden,eng ENG,"MF,FW",24,,0,91.0,1.0,0.0,0.0,0.1,0.1,Manchester City
+42,Matheus Nunes,pt POR,"FW,MF",26,,0,21.0,0.2,0.0,1.0,0.0,0.5,Manchester City
+43,Nathan Aké,nl NED,DF,29,,0,3.0,0.0,0.0,0.0,0.0,0.0,Manchester City
+44,James Mcatee,eng ENG,FW,21,,0,1.0,0.0,0.0,0.0,0.0,0.0,Manchester City
+45,Scott Carson,eng ENG,GK,39,,0,,,,,,,Manchester City
+46,Issa Kaboré,bf BFA,"DF,MF",23,,0,,,,,,,Manchester City
+47,Stefan Ortega,de GER,GK,31,,0,,,,,,,Manchester City
+48,Nico O’Reilly,eng ENG,FW,19,,0,,,,,,,Manchester City
+49,Squad Total,,,27.6,,66,540.0,6.0,14.0,9.0,12.2,10.1,Manchester City
+50,Opponent Total,,,26.5,,66,540.0,6.0,5.0,3.0,5.2,3.6,Manchester City
+51,Kai Havertz,de GER,"FW,MF",25,,6,540.0,6.0,3.0,1.0,3.6,0.7,Arsenal
+52,Gabriel Magalhães,br BRA,DF,26,,6,540.0,6.0,2.0,0.0,1.2,0.3,Arsenal
+53,David Raya,es ESP,GK,29,,6,540.0,6.0,0.0,0.0,0.0,0.0,Arsenal
+54,William Saliba,fr FRA,DF,23,,6,540.0,6.0,0.0,0.0,0.0,0.0,Arsenal
+55,Thomas Partey,gh GHA,MF,31,,6,534.0,5.9,1.0,0.0,0.2,0.2,Arsenal
+56,Bukayo Saka,eng ENG,"MF,FW",23,,6,476.0,5.3,1.0,5.0,1.7,2.4,Arsenal
+57,Jurriën Timber,nl NED,DF,23,,5,448.0,5.0,0.0,1.0,0.3,0.4,Arsenal
+58,Gabriel Martinelli,br BRA,"MF,FW",23,,5,409.0,4.5,1.0,2.0,0.6,1.6,Arsenal
+59,Declan Rice,eng ENG,MF,25,,5,402.0,4.5,0.0,0.0,0.2,0.6,Arsenal
+60,Ben White,eng ENG,DF,26,,4,405.0,4.5,0.0,0.0,0.1,0.0,Arsenal
+61,Leandro Trossard,be BEL,FW,29,,4,307.0,3.4,2.0,0.0,1.5,0.5,Arsenal
+62,Martin Ødegaard,no NOR,MF,25,,3,253.0,2.8,0.0,0.0,0.4,0.3,Arsenal
+63,Riccardo Calafiori,it ITA,DF,22,,2,207.0,2.3,1.0,0.0,0.5,0.1,Arsenal
+64,Jorginho,it ITA,MF,32,,1,90.0,1.0,0.0,0.0,0.0,0.0,Arsenal
+65,Oleksandr Zinchenko,ua UKR,DF,27,,1,79.0,0.9,0.0,0.0,0.0,0.0,Arsenal
+66,Raheem Sterling,eng ENG,"MF,FW",29,,0,28.0,0.3,0.0,0.0,0.0,0.0,Arsenal
+67,Gabriel Jesus,br BRA,"FW,MF",27,,0,22.0,0.2,0.0,0.0,0.1,0.0,Arsenal
+68,Jakub Kiwior,pl POL,DF,24,,0,17.0,0.2,0.0,0.0,0.0,0.0,Arsenal
+69,Ethan Nwaneri,eng ENG,"MF,FW",17,,0,11.0,0.1,0.0,0.0,0.0,0.1,Arsenal
+70,Reiss Nelson,eng ENG,FW,24,,0,3.0,0.0,0.0,0.0,0.0,0.0,Arsenal
+71,Myles Lewis-Skelly,eng ENG,DF,18,,0,1.0,0.0,0.0,0.0,0.0,0.0,Arsenal
+72,Ayden Heaven,eng ENG,MF,18,,0,,,,,,,Arsenal
+73,Ismeal Kabia,eng ENG,MF,18,,0,,,,,,,Arsenal
+74,Maldini Kacurri,al ALB,DF,19,,0,,,,,,,Arsenal
+75,Neto,br BRA,GK,35,,0,,,,,,,Arsenal
+76,Josh Nichols,eng ENG,DF,18,,0,,,,,,,Arsenal
+77,Eddie Nketiah,eng ENG,FW,25,,0,,,,,,,Arsenal
+78,Salah Oulad M'Hand,nl NED,MF,21,,0,,,,,,,Arsenal
+79,Aaron Ramsdale,eng ENG,GK,26,,0,,,,,,,Arsenal
+80,Tommy Setford,eng ENG,GK,18,,0,,,,,,,Arsenal
+81,Squad Total,,,26.2,,66,540.0,6.0,11.0,9.0,10.0,7.2,Arsenal
+82,Opponent Total,,,26.5,,66,540.0,6.0,5.0,3.0,6.6,4.5,Arsenal
+83,Levi Colwill,eng ENG,DF,21,,6,540.0,6.0,0.0,0.0,0.2,0.6,Chelsea
+84,Robert Sánchez,es ESP,GK,26,,6,540.0,6.0,0.0,0.0,0.0,0.0,Chelsea
+85,Moisés Caicedo,ec ECU,MF,22,,6,525.0,5.8,0.0,1.0,0.1,1.1,Chelsea
+86,Wesley Fofana,fr FRA,DF,23,,6,506.0,5.6,0.0,0.0,0.0,0.4,Chelsea
+87,Cole Palmer,eng ENG,"MF,FW",22,,6,505.0,5.6,6.0,4.0,3.7,3.2,Chelsea
+88,Marc Cucurella,es ESP,DF,26,,6,500.0,5.6,0.0,0.0,0.0,0.2,Chelsea
+89,Nicolas Jackson,sn SEN,FW,23,,6,442.0,4.9,4.0,3.0,4.7,1.0,Chelsea
+90,Enzo Fernández,ar ARG,MF,23,,5,431.0,4.8,0.0,0.0,0.2,0.9,Chelsea
+91,Noni Madueke,eng ENG,FW,22,,5,388.0,4.3,3.0,0.0,1.6,0.5,Chelsea
+92,Malo Gusto,fr FRA,DF,21,,4,343.0,3.8,0.0,0.0,0.0,0.1,Chelsea
+93,Pedro Neto,pt POR,FW,24,,2,242.0,2.7,0.0,1.0,0.1,0.4,Chelsea
+94,Jadon Sancho,eng ENG,FW,24,,2,171.0,1.9,0.0,3.0,0.1,0.9,Chelsea
+95,Renato Veiga,pt POR,"MF,DF",21,,1,130.0,1.4,0.0,0.0,0.0,0.0,Chelsea
+96,Christopher Nkunku,fr FRA,FW,26,,1,121.0,1.3,1.0,0.0,1.0,0.3,Chelsea
+97,Tosin Adarabioyo,eng ENG,DF,27,,1,120.0,1.3,0.0,0.0,0.0,0.0,Chelsea
+98,Axel Disasi,fr FRA,DF,26,,1,94.0,1.0,0.0,0.0,0.0,0.0,Chelsea
+99,Mykhailo Mudryk,ua UKR,FW,23,,1,82.0,0.9,0.0,0.0,0.0,0.5,Chelsea
+100,Roméo Lavia,be BEL,MF,20,,1,78.0,0.9,0.0,0.0,0.0,0.5,Chelsea
+101,João Félix,pt POR,"MF,FW",24,,0,112.0,1.2,1.0,0.0,0.5,0.0,Chelsea
+102,Kiernan Dewsbury-Hall,eng ENG,MF,26,,0,46.0,0.5,0.0,0.0,0.0,0.1,Chelsea
+103,Marc Guiu,es ESP,FW,18,,0,24.0,0.3,0.0,0.0,0.0,0.0,Chelsea
+104,Benoît Badiashile,fr FRA,DF,23,,0,,,,,,,Chelsea
+105,Cesare Casadei,it ITA,MF,21,,0,,,,,,,Chelsea
+106,Filip Jørgensen,dk DEN,GK,22,,0,,,,,,,Chelsea
+107,Squad Total,,,23.8,,66,540.0,6.0,15.0,12.0,12.1,10.4,Chelsea
+108,Opponent Total,,,26.6,,66,540.0,6.0,7.0,4.0,7.0,4.6,Chelsea
+109,Ezri Konsa,eng ENG,DF,26,,6,540.0,6.0,1.0,0.0,0.3,0.0,Aston Villa
+110,Emiliano Martínez,ar ARG,GK,32,,6,540.0,6.0,0.0,0.0,0.0,0.0,Aston Villa
+111,Pau Torres,es ESP,DF,27,,6,540.0,6.0,0.0,0.0,0.0,0.0,Aston Villa
+112,Youri Tielemans,be BEL,MF,27,,6,533.0,5.9,0.0,2.0,0.2,1.5,Aston Villa
+113,Morgan Rogers,eng ENG,"MF,FW",22,,6,513.0,5.7,1.0,2.0,0.8,2.1,Aston Villa
+114,Ollie Watkins,eng ENG,FW,28,,6,440.0,4.9,4.0,2.0,3.5,0.7,Aston Villa
+115,Lucas Digne,fr FRA,DF,31,,6,434.0,4.8,0.0,2.0,0.0,1.1,Aston Villa
+116,Amadou Onana,be BEL,MF,23,,6,421.0,4.7,2.0,0.0,1.1,0.1,Aston Villa
+117,John McGinn,sct SCO,"FW,MF",29,,5,349.0,3.9,0.0,0.0,0.5,0.1,Aston Villa
+118,Leon Bailey,jm JAM,"FW,MF",27,,4,286.0,3.2,0.0,1.0,0.3,0.7,Aston Villa
+119,Jacob Ramsey,eng ENG,"FW,MF",23,,3,337.0,3.7,0.0,1.0,0.5,0.6,Aston Villa
+120,Diego Carlos,br BRA,DF,31,,2,180.0,2.0,0.0,0.0,0.0,0.0,Aston Villa
+121,Lamare Bogarde,nl NED,DF,20,,2,168.0,1.9,0.0,0.0,0.0,0.1,Aston Villa
+122,Matty Cash,pl POL,DF,27,,2,96.0,1.1,0.0,0.0,0.0,0.1,Aston Villa
+123,Jhon Durán,co COL,FW,20,,0,163.0,1.8,4.0,0.0,2.1,0.0,Aston Villa
+124,Ross Barkley,eng ENG,MF,30,,0,126.0,1.4,0.0,1.0,0.1,0.1,Aston Villa
+125,Ian Maatsen,nl NED,"DF,MF",22,,0,118.0,1.3,0.0,0.0,0.0,0.8,Aston Villa
+126,Kosta Nedeljković,rs SRB,DF,18,,0,96.0,1.1,0.0,0.0,0.0,0.0,Aston Villa
+127,Jaden Philogene Bidace,eng ENG,"FW,MF",22,,0,45.0,0.5,0.0,0.0,0.1,0.0,Aston Villa
+128,Emi Buendía,ar ARG,"MF,FW",27,,0,15.0,0.2,0.0,0.0,0.1,0.0,Aston Villa
+129,Joe Gauci,au AUS,GK,24,,0,,,,,,,Aston Villa
+130,Sil Swinkels,nl NED,DF,20,,0,,,,,,,Aston Villa
+131,Kadan Young,eng ENG,MF,18,,0,,,,,,,Aston Villa
+132,Oliwier Zych,pl POL,GK,20,,0,,,,,,,Aston Villa
+133,Squad Total,,,26.9,,66,540.0,6.0,12.0,11.0,9.3,7.7,Aston Villa
+134,Opponent Total,,,27.2,,66,540.0,6.0,9.0,5.0,6.2,4.4,Aston Villa
+135,Calvin Bassey,ng NGA,DF,24,6.0,6,540.0,6.0,0.0,0.0,0.2,0.0,Fulham
+136,Bernd Leno,de GER,GK,32,6.0,6,540.0,6.0,0.0,0.0,0.0,0.0,Fulham
+137,Antonee Robinson,us USA,DF,27,6.0,6,540.0,6.0,0.0,2.0,0.1,0.5,Fulham
+138,Kenny Tete,nl NED,DF,28,6.0,6,540.0,6.0,0.0,0.0,0.7,0.0,Fulham
+139,Alex Iwobi,ng NGA,FW,28,6.0,6,511.0,5.7,1.0,1.0,0.7,1.2,Fulham
+140,Andreas Pereira,br BRA,MF,28,6.0,6,479.0,5.3,0.0,0.0,0.4,1.0,Fulham
+141,Adama Traoré,es ESP,FW,28,6.0,6,466.0,5.2,1.0,2.0,1.2,1.6,Fulham
+142,Saša Lukić,rs SRB,MF,28,6.0,6,457.0,5.1,0.0,0.0,0.0,0.3,Fulham
+143,Emile Smith Rowe,eng ENG,MF,24,6.0,6,444.0,4.9,2.0,1.0,1.5,0.4,Fulham
+144,Issa Diop,fr FRA,DF,27,5.0,3,280.0,3.1,0.0,0.0,0.2,0.0,Fulham
+145,Rodrigo Muniz,br BRA,FW,23,6.0,3,277.0,3.1,0.0,1.0,1.2,0.5,Fulham
+146,Joachim Andersen,dk DEN,DF,28,3.0,3,270.0,3.0,0.0,0.0,0.1,0.2,Fulham
+147,Raúl Jiménez,mx MEX,FW,33,6.0,3,263.0,2.9,3.0,0.0,1.7,0.2,Fulham
+148,Sander Berge,no NOR,MF,26,4.0,0,111.0,1.2,0.0,0.0,0.0,0.1,Fulham
+149,Tom Cairney,sct SCO,MF,33,4.0,0,71.0,0.8,0.0,0.0,0.0,0.3,Fulham
+150,Reiss Nelson,eng ENG,"FW,MF",24,3.0,0,64.0,0.7,1.0,0.0,0.4,0.1,Fulham
+151,Harrison Reed,eng ENG,MF,29,6.0,0,47.0,0.5,0.0,0.0,0.0,0.1,Fulham
+152,Harry Wilson,wls WAL,FW,27,3.0,0,39.0,0.4,0.0,0.0,0.0,0.0,Fulham
+153,Jay Stansfield,eng ENG,MF,21,1.0,0,1.0,0.0,0.0,0.0,0.0,0.0,Fulham
+154,Steven Benda,de GER,GK,26,0.0,0,,,,,,,Fulham
+155,Timothy Castagne,be BEL,"DF,MF",28,0.0,0,,,,,,,Fulham
+156,Jorge Cuenca,es ESP,DF,24,0.0,0,,,,,,,Fulham
+157,Joshua King,eng ENG,MF,17,0.0,0,,,,,,,Fulham
+158,Ryan Sessegnon,eng ENG,"DF,FW",24,0.0,0,,,,,,,Fulham
+159,Squad Total,,,28.1,6.0,66,540.0,6.0,8.0,7.0,8.2,6.5,Fulham
+160,Opponent Total,,,27.3,6.0,66,540.0,6.0,5.0,5.0,6.5,5.0,Fulham
+161,Dan Burn,eng ENG,DF,32,,6,540.0,6.0,0.0,0.0,0.4,0.1,Newcastle United
+162,Nick Pope,eng ENG,GK,32,,6,540.0,6.0,0.0,0.0,0.0,0.0,Newcastle United
+163,Bruno Guimarães,br BRA,MF,26,,6,536.0,6.0,0.0,1.0,0.2,0.2,Newcastle United
+164,Anthony Gordon,eng ENG,FW,23,,6,508.0,5.6,2.0,0.0,1.9,1.0,Newcastle United
+165,Joelinton,br BRA,MF,28,,6,478.0,5.3,1.0,0.0,0.8,0.1,Newcastle United
+166,Alexander Isak,se SWE,FW,25,,5,405.0,4.5,1.0,1.0,1.5,0.5,Newcastle United
+167,Jacob Murphy,eng ENG,FW,29,,4,341.0,3.8,0.0,2.0,0.2,1.3,Newcastle United
+168,Valentino Livramento,eng ENG,DF,21,,4,330.0,3.7,0.0,0.0,0.0,0.1,Newcastle United
+169,Fabian Schär,ch SUI,DF,32,,4,297.0,3.3,1.0,0.0,0.6,0.0,Newcastle United
+170,Sean Longstaff,eng ENG,MF,26,,4,285.0,3.2,0.0,0.0,0.2,0.0,Newcastle United
+171,Lewis Hall,eng ENG,DF,20,,3,339.0,3.8,0.0,0.0,0.0,0.4,Newcastle United
+172,Harvey Barnes,eng ENG,FW,26,,3,324.0,3.6,3.0,1.0,1.8,1.6,Newcastle United
+173,Lloyd Kelly,eng ENG,DF,25,,3,205.0,2.3,0.0,1.0,0.2,0.5,Newcastle United
+174,Emil Krafth,se SWE,DF,30,,2,241.0,2.7,0.0,0.0,0.0,0.1,Newcastle United
+175,Kieran Trippier,eng ENG,DF,34,,2,210.0,2.3,0.0,0.0,0.0,0.0,Newcastle United
+176,Sandro Tonali,it ITA,MF,24,,1,161.0,1.8,0.0,0.0,0.5,0.1,Newcastle United
+177,Joe Willock,eng ENG,"MF,FW",25,,1,126.0,1.4,0.0,1.0,0.2,0.6,Newcastle United
+178,William Osula,dk DEN,FW,21,,0,8.0,0.1,0.0,0.0,0.0,0.0,Newcastle United
+179,Miguel Almirón,py PAR,FW,30,,0,3.0,0.0,0.0,0.0,0.0,0.0,Newcastle United
+180,Martin Dúbravka,sk SVK,GK,35,,0,,,,,,,Newcastle United
+181,Alex Murphy,ie IRL,DF,20,,0,,,,,,,Newcastle United
+182,John Ruddy,eng ENG,GK,37,,0,,,,,,,Newcastle United
+183,Matt Targett,eng ENG,"DF,MF",29,,0,,,,,,,Newcastle United
+184,Squad Total,,,27.6,,66,540.0,6.0,8.0,7.0,8.3,6.8,Newcastle United
+185,Opponent Total,,,26.9,,66,540.0,6.0,6.0,6.0,9.6,8.0,Newcastle United
+186,Cristian Romero,ar ARG,DF,26,,6,540.0,6.0,1.0,0.0,0.8,0.2,Tottenham Hotspur
+187,Guglielmo Vicario,it ITA,GK,27,,6,540.0,6.0,0.0,0.0,0.0,0.0,Tottenham Hotspur
+188,Pedro Porro,es ESP,DF,25,,6,536.0,6.0,1.0,0.0,0.5,0.9,Tottenham Hotspur
+189,James Maddison,eng ENG,MF,27,,6,479.0,5.3,1.0,2.0,1.9,1.4,Tottenham Hotspur
+190,Destiny Udogie,it ITA,DF,21,,6,477.0,5.3,0.0,0.0,0.1,0.1,Tottenham Hotspur
+191,Son Heung-min,kr KOR,FW,32,,5,449.0,5.0,2.0,2.0,1.4,1.7,Tottenham Hotspur
+192,Micky van de Ven,nl NED,DF,23,,5,440.0,4.9,0.0,2.0,0.1,1.2,Tottenham Hotspur
+193,Dejan Kulusevski,se SWE,"MF,FW",24,,5,438.0,4.9,1.0,1.0,1.1,1.8,Tottenham Hotspur
+194,Brennan Johnson,wls WAL,FW,23,,5,423.0,4.7,2.0,0.0,2.3,0.4,Tottenham Hotspur
+195,Dominic Solanke,eng ENG,FW,27,,4,357.0,4.0,2.0,0.0,3.4,0.2,Tottenham Hotspur
+196,Rodrigo Bentancur,uy URU,MF,27,,4,305.0,3.4,0.0,0.0,0.3,0.1,Tottenham Hotspur
+197,Pape Matar Sarr,sn SEN,MF,22,,2,204.0,2.3,0.0,1.0,0.6,1.0,Tottenham Hotspur
+198,Yves Bissouma,ml MLI,MF,28,,2,181.0,2.0,1.0,0.0,0.1,0.2,Tottenham Hotspur
+199,Wilson Odobert,fr FRA,FW,19,,2,162.0,1.8,0.0,0.0,0.4,0.1,Tottenham Hotspur
+200,Timo Werner,de GER,"FW,MF",28,,1,117.0,1.3,0.0,0.0,0.6,0.1,Tottenham Hotspur
+201,Radu Drăgușin,ro ROU,DF,22,,1,100.0,1.1,0.0,0.0,0.0,0.0,Tottenham Hotspur
+202,Djed Spence,eng ENG,DF,24,,0,64.0,0.7,0.0,0.0,0.0,0.0,Tottenham Hotspur
+203,Lucas Bergvall,se SWE,"MF,FW",18,,0,51.0,0.6,0.0,0.0,0.1,0.2,Tottenham Hotspur
+204,Archie Gray,eng ENG,"MF,DF",18,,0,34.0,0.4,0.0,0.0,0.0,0.0,Tottenham Hotspur
+205,Richarlison,br BRA,"FW,MF",27,,0,25.0,0.3,0.0,0.0,0.2,0.0,Tottenham Hotspur
+206,Mikey Moore,eng ENG,FW,17,,0,18.0,0.2,0.0,0.0,0.0,0.0,Tottenham Hotspur
+207,Brandon Austin,eng ENG,GK,25,,0,,,,,,,Tottenham Hotspur
+208,Ben Davies,wls WAL,"DF,MF",31,,0,,,,,,,Tottenham Hotspur
+209,Alfie Devine,eng ENG,MF,20,,0,,,,,,,Tottenham Hotspur
+210,Fraser Forster,eng ENG,GK,36,,0,,,,,,,Tottenham Hotspur
+211,Will Lankshear,eng ENG,FW,19,,0,,,,,,,Tottenham Hotspur
+212,Squad Total,,,25.7,,66,540.0,6.0,11.0,8.0,13.4,9.2,Tottenham Hotspur
+213,Opponent Total,,,26.6,,66,540.0,6.0,5.0,5.0,6.3,5.8,Tottenham Hotspur
+214,Kaoru Mitoma,jp JPN,"FW,MF",27,6.0,6,531.0,5.9,1.0,1.0,1.7,1.4,Brighton and Hove Albion
+215,Lewis Dunk,eng ENG,DF,32,6.0,6,525.0,5.8,0.0,0.0,0.2,0.4,Brighton and Hove Albion
+216,Jack Hinshelwood,eng ENG,"DF,MF",19,6.0,6,517.0,5.7,1.0,0.0,0.3,0.2,Brighton and Hove Albion
+217,Danny Welbeck,eng ENG,FW,33,6.0,6,506.0,5.6,3.0,1.0,2.4,0.3,Brighton and Hove Albion
+218,Jan Paul van Hecke,nl NED,DF,24,5.0,5,450.0,5.0,0.0,1.0,0.1,0.1,Brighton and Hove Albion
+219,Joël Veltman,nl NED,DF,32,5.0,5,431.0,4.8,0.0,0.0,0.1,0.1,Brighton and Hove Albion
+220,Bart Verbruggen,nl NED,GK,22,4.0,4,360.0,4.0,0.0,0.0,0.0,0.0,Brighton and Hove Albion
+221,Carlos Baleba,cm CMR,MF,20,5.0,4,349.0,3.9,1.0,1.0,0.7,0.2,Brighton and Hove Albion
+222,Yankuba Minteh,gm GAM,"FW,MF",20,6.0,4,320.0,3.6,0.0,1.0,0.5,1.5,Brighton and Hove Albion
+223,João Pedro,br BRA,"MF,FW",23,4.0,3,281.0,3.1,2.0,0.0,0.8,0.2,Brighton and Hove Albion
+224,Georginio Rutter,fr FRA,"FW,MF",22,5.0,3,226.0,2.5,1.0,0.0,1.1,0.4,Brighton and Hove Albion
+225,James Milner,eng ENG,MF,38,3.0,3,169.0,1.9,0.0,0.0,0.2,0.2,Brighton and Hove Albion
+226,Pervis Estupiñán,ec ECU,DF,26,3.0,2,190.0,2.1,0.0,0.0,0.1,0.2,Brighton and Hove Albion
+227,Jason Steele,eng ENG,GK,34,2.0,2,180.0,2.0,0.0,0.0,0.0,0.0,Brighton and Hove Albion
+228,Mats Wieffer,nl NED,MF,24,3.0,2,175.0,1.9,0.0,1.0,0.0,0.1,Brighton and Hove Albion
+229,Yasin Ayari,se SWE,MF,20,5.0,1,201.0,2.2,0.0,0.0,0.5,0.1,Brighton and Hove Albion
+230,Simon Adingra,ci CIV,"FW,MF",22,5.0,1,137.0,1.5,1.0,1.0,0.3,0.5,Brighton and Hove Albion
+231,Billy Gilmour,sct SCO,MF,23,2.0,1,98.0,1.1,0.0,0.0,0.1,0.0,Brighton and Hove Albion
+232,Ferdi Kadioglu,tr TUR,DF,24,2.0,1,93.0,1.0,0.0,0.0,0.0,0.1,Brighton and Hove Albion
+233,Adam Webster,eng ENG,DF,29,2.0,1,71.0,0.8,0.0,0.0,0.0,0.0,Brighton and Hove Albion
+234,Julio Enciso,py PAR,"MF,FW",20,4.0,0,62.0,0.7,0.0,0.0,0.2,0.1,Brighton and Hove Albion
+235,Igor,br BRA,DF,26,1.0,0,34.0,0.4,0.0,0.0,0.0,0.0,Brighton and Hove Albion
+236,Evan Ferguson,ie IRL,FW,19,3.0,0,25.0,0.3,0.0,0.0,0.1,0.0,Brighton and Hove Albion
+237,Jeremy Sarmiento,ec ECU,MF,22,1.0,0,9.0,0.1,0.0,0.0,0.0,0.0,Brighton and Hove Albion
+238,Valentín Barco,ar ARG,DF,20,0.0,0,,,,,,,Brighton and Hove Albion
+239,Tariq Lamptey,gh GHA,"DF,MF",24,0.0,0,,,,,,,Brighton and Hove Albion
+240,Jakub Moder,pl POL,MF,25,0.0,0,,,,,,,Brighton and Hove Albion
+241,Mark O'Mahony,ie IRL,FW,19,0.0,0,,,,,,,Brighton and Hove Albion
+242,Carl Rushworth,eng ENG,GK,23,0.0,0,,,,,,,Brighton and Hove Albion
+243,Imari Samuels,eng ENG,DF,21,0.0,0,,,,,,,Brighton and Hove Albion
+244,Squad Total,,,26.3,6.0,66,540.0,6.0,10.0,7.0,9.0,6.2,Brighton and Hove Albion
+245,Opponent Total,,,26.4,6.0,66,540.0,6.0,8.0,5.0,9.9,7.7,Brighton and Hove Albion
+246,Murillo,br BRA,DF,22,,6,540.0,6.0,0.0,0.0,0.0,0.4,Nottingham Forest
+247,Matz Sels,be BEL,GK,32,,6,540.0,6.0,0.0,0.0,0.0,0.0,Nottingham Forest
+248,Ola Aina,ng NGA,DF,27,,6,503.0,5.6,0.0,0.0,0.0,0.3,Nottingham Forest
+249,Chris Wood,nz NZL,FW,32,,6,477.0,5.3,3.0,0.0,2.3,0.7,Nottingham Forest
+250,Nikola Milenković,rs SRB,DF,26,,5,450.0,5.0,0.0,0.0,1.1,0.0,Nottingham Forest
+251,Morgan Gibbs-White,eng ENG,MF,24,,5,431.0,4.8,1.0,0.0,0.7,0.8,Nottingham Forest
+252,Elliot Anderson,eng ENG,"MF,FW",21,,5,356.0,4.0,0.0,1.0,0.1,0.2,Nottingham Forest
+253,Callum Hudson-Odoi,eng ENG,FW,23,,4,400.0,4.4,1.0,0.0,0.6,0.7,Nottingham Forest
+254,Anthony Elanga,se SWE,FW,22,,4,352.0,3.9,0.0,1.0,0.6,0.6,Nottingham Forest
+255,Neco Williams,wls WAL,DF,23,,3,333.0,3.7,0.0,0.0,0.4,0.2,Nottingham Forest
+256,Ibrahim Sangaré,ci CIV,MF,26,,3,212.0,2.4,0.0,0.0,0.0,0.0,Nottingham Forest
+257,James Ward-Prowse,eng ENG,MF,29,,3,209.0,2.3,0.0,0.0,0.0,0.0,Nottingham Forest
+258,Álex Moreno,es ESP,DF,31,,3,207.0,2.3,0.0,0.0,0.0,0.0,Nottingham Forest
+259,Ryan Yates,eng ENG,MF,26,,2,359.0,4.0,0.0,0.0,0.3,0.4,Nottingham Forest
+260,Nicolás Domínguez,ar ARG,"FW,MF",26,,2,162.0,1.8,0.0,0.0,0.1,0.0,Nottingham Forest
+261,Willy Boly,ci CIV,DF,33,,1,91.0,1.0,0.0,0.0,0.1,0.0,Nottingham Forest
+262,Taiwo Awoniyi,ng NGA,FW,27,,1,80.0,0.9,0.0,0.0,0.3,0.0,Nottingham Forest
+263,Danilo,br BRA,MF,23,,1,14.0,0.2,0.0,0.0,0.0,0.0,Nottingham Forest
+264,Jota Silva,pt POR,"MF,FW",25,,0,91.0,1.0,0.0,1.0,0.1,0.7,Nottingham Forest
+265,Ramón Sosa,py PAR,"MF,FW",25,,0,59.0,0.7,1.0,0.0,0.5,0.2,Nottingham Forest
+266,Harry Toffolo,eng ENG,DF,29,,0,37.0,0.4,0.0,0.0,0.0,0.0,Nottingham Forest
+267,Morato,br BRA,DF,23,,0,29.0,0.3,0.0,0.0,0.0,0.0,Nottingham Forest
+268,Carlos Miguel,br BRA,GK,25,,0,,,,,,,Nottingham Forest
+269,Andrew Omobamidele,ie IRL,DF,22,,0,,,,,,,Nottingham Forest
+270,Eric da Silva Moreira,de GER,DF,18,,0,,,,,,,Nottingham Forest
+271,Squad Total,,,26.7,,66,540.0,6.0,6.0,3.0,7.2,5.0,Nottingham Forest
+272,Opponent Total,,,26.9,,66,540.0,6.0,5.0,2.0,5.4,2.9,Nottingham Forest
+273,Illia Zabarnyi,ua UKR,DF,22,,6,540.0,6.0,0.0,0.0,0.2,0.1,Bournemouth
+274,Lewis Cook,eng ENG,MF,27,,6,533.0,5.9,1.0,2.0,0.3,1.2,Bournemouth
+275,Antoine Semenyo,gh GHA,FW,24,,6,517.0,5.7,3.0,1.0,2.1,1.9,Bournemouth
+276,Milos Kerkez,hu HUN,DF,20,,6,515.0,5.7,0.0,0.0,0.1,0.2,Bournemouth
+277,Marcus Tavernier,eng ENG,"MF,FW",25,,6,511.0,5.7,1.0,1.0,2.1,1.1,Bournemouth
+278,Ryan Christie,sct SCO,MF,29,,5,382.0,4.2,0.0,0.0,0.1,0.3,Bournemouth
+279,Evanilson,br BRA,FW,24,,5,353.0,3.9,1.0,0.0,2.4,0.5,Bournemouth
+280,Marcos Senesi,ar ARG,DF,27,,4,346.0,3.8,0.0,0.0,0.0,0.1,Bournemouth
+281,Justin Kluivert,nl NED,"MF,FW",25,,4,338.0,3.8,0.0,1.0,0.6,0.8,Bournemouth
+282,Julian Araujo,mx MEX,DF,23,,3,274.0,3.0,0.0,0.0,0.0,0.0,Bournemouth
+283,Kepa Arrizabalaga,es ESP,GK,30,,3,270.0,3.0,0.0,0.0,0.0,0.0,Bournemouth
+284,Adam Smith,eng ENG,DF,33,,3,266.0,3.0,0.0,0.0,0.0,0.1,Bournemouth
+285,Dango Ouattara,bf BFA,"FW,DF",22,,2,217.0,2.4,1.0,1.0,0.8,1.0,Bournemouth
+286,Dean Huijsen,es ESP,DF,19,,2,194.0,2.2,0.0,0.0,0.0,0.1,Bournemouth
+287,Neto,br BRA,GK,35,,2,180.0,2.0,0.0,0.0,0.0,0.0,Bournemouth
+288,Alex Scott,eng ENG,MF,21,,1,173.0,1.9,0.0,0.0,0.1,0.1,Bournemouth
+289,Luis Sinisterra,co COL,"FW,MF",25,,1,152.0,1.7,1.0,1.0,1.1,0.4,Bournemouth
+290,Mark Travers,ie IRL,GK,25,,1,90.0,1.0,0.0,0.0,0.0,0.0,Bournemouth
+291,Enes Ünal,tr TUR,FW,27,,0,38.0,0.4,0.0,0.0,0.1,0.1,Bournemouth
+292,Daniel Jebbison,eng ENG,FW,21,,0,28.0,0.3,0.0,0.0,0.0,0.0,Bournemouth
+293,Philip Billing,dk DEN,MF,28,,0,23.0,0.3,0.0,0.0,0.0,0.0,Bournemouth
+294,Max Aarons,eng ENG,DF,24,,0,,,,,,,Bournemouth
+295,Jaidon Anthony,eng ENG,"FW,MF",24,,0,,,,,,,Bournemouth
+296,David Brooks,wls WAL,"FW,MF",27,,0,,,,,,,Bournemouth
+297,Will Dennis,eng ENG,GK,24,,0,,,,,,,Bournemouth
+298,James Hill,eng ENG,DF,22,,0,,,,,,,Bournemouth
+299,Hamed Junior Traorè,ci CIV,"FW,MF",24,,0,,,,,,,Bournemouth
+300,Squad Total,,,25.6,,66,540.0,6.0,8.0,7.0,10.0,7.8,Bournemouth
+301,Opponent Total,,,26.7,,66,540.0,6.0,9.0,7.0,8.1,6.8,Bournemouth
+302,Nathan Collins,ie IRL,DF,23,6.0,6,540.0,6.0,0.0,0.0,0.6,0.0,Brentford
+303,Mark Flekken,nl NED,GK,31,6.0,6,540.0,6.0,0.0,0.0,0.0,0.0,Brentford
+304,Ethan Pinnock,jm JAM,DF,31,6.0,6,540.0,6.0,0.0,0.0,0.2,0.0,Brentford
+305,Bryan Mbeumo,cm CMR,FW,25,6.0,6,539.0,6.0,5.0,0.0,2.0,1.3,Brentford
+306,Vitaly Janelt,de GER,"MF,DF",26,6.0,6,470.0,5.2,0.0,0.0,0.1,0.1,Brentford
+307,Kristoffer Ajer,no NOR,DF,26,6.0,6,457.0,5.1,0.0,0.0,0.3,0.2,Brentford
+308,Mikkel Damsgaard,dk DEN,MF,24,6.0,4,374.0,4.2,0.0,0.0,0.3,0.4,Brentford
+309,Keane Lewis-Potter,eng ENG,"DF,MF",23,6.0,4,368.0,4.1,0.0,1.0,0.1,0.1,Brentford
+310,Christian Nørgaard,dk DEN,MF,30,4.0,4,360.0,4.0,0.0,0.0,0.5,0.2,Brentford
+311,Yoane Wissa,cd COD,FW,28,4.0,4,289.0,3.2,3.0,1.0,2.4,0.3,Brentford
+312,Kevin Schade,de GER,"FW,MF",22,6.0,3,298.0,3.3,0.0,0.0,0.4,0.1,Brentford
+313,Sepp van den Berg,nl NED,DF,22,4.0,3,286.0,3.2,0.0,0.0,0.0,0.1,Brentford
+314,Mathias Jensen,dk DEN,MF,28,3.0,3,238.0,2.6,0.0,1.0,0.1,0.7,Brentford
+315,Mads Roerslev,dk DEN,DF,25,5.0,2,263.0,2.9,0.0,0.0,0.0,0.2,Brentford
+316,Fabio Carvalho,pt POR,"FW,MF",22,6.0,2,230.0,2.6,0.0,1.0,0.1,0.5,Brentford
+317,Yehor Yarmoliuk,ua UKR,MF,20,3.0,1,100.0,1.1,0.0,0.0,0.1,0.0,Brentford
+318,Frank Onyeka,ng NGA,MF,26,2.0,0,25.0,0.3,0.0,0.0,0.0,0.0,Brentford
+319,Yunus Emre Konak,tr TUR,"MF,FW",18,2.0,0,18.0,0.2,0.0,0.0,0.0,0.0,Brentford
+320,Ryan Trevitt,eng ENG,MF,21,1.0,0,4.0,0.0,0.0,0.0,0.0,0.0,Brentford
+321,Ben Mee,eng ENG,DF,35,1.0,0,1.0,0.0,0.0,0.0,0.0,0.0,Brentford
+322,Kim Jisoo,kr KOR,DF,19,0.0,0,,,,,,,Brentford
+323,Jayden Meghoma,eng ENG,DF,18,0.0,0,,,,,,,Brentford
+324,Myles Peart-Harris,eng ENG,MF,22,0.0,0,,,,,,,Brentford
+325,Hákon Rafn Valdimarsson,is ISL,GK,22,0.0,0,,,,,,,Brentford
+326,Tony Yogane,eng ENG,MF,19,0.0,0,,,,,,,Brentford
+327,Squad Total,,,26.3,6.0,66,540.0,6.0,8.0,4.0,7.0,4.3,Brentford
+328,Opponent Total,,,27.3,6.0,66,540.0,6.0,9.0,7.0,11.7,9.1,Brentford
+329,Diogo Dalot,pt POR,DF,25,6.0,6,540.0,6.0,0.0,1.0,0.0,1.0,Manchester United
+330,André Onana,cm CMR,GK,28,6.0,6,540.0,6.0,0.0,0.0,0.0,0.0,Manchester United
+331,Lisandro Martínez,ar ARG,DF,26,6.0,6,526.0,5.8,0.0,0.0,0.8,0.1,Manchester United
+332,Noussair Mazraoui,ma MAR,DF,26,6.0,6,513.0,5.7,0.0,1.0,0.2,0.1,Manchester United
+333,Kobbie Mainoo,eng ENG,MF,19,6.0,6,487.0,5.4,0.0,0.0,0.1,0.6,Manchester United
+334,Bruno Fernandes,pt POR,"MF,FW",30,6.0,6,479.0,5.3,0.0,1.0,1.9,1.2,Manchester United
+335,Marcus Rashford,eng ENG,FW,26,6.0,5,418.0,4.6,1.0,0.0,0.4,1.6,Manchester United
+336,Matthijs de Ligt,nl NED,DF,25,6.0,4,356.0,4.0,1.0,0.0,1.1,0.0,Manchester United
+337,Joshua Zirkzee,nl NED,FW,23,6.0,4,355.0,3.9,1.0,0.0,2.4,0.3,Manchester United
+338,Amad Diallo,ci CIV,FW,22,6.0,4,342.0,3.8,1.0,1.0,0.4,1.2,Manchester United
+339,Alejandro Garnacho,ar ARG,FW,20,6.0,3,322.0,3.6,1.0,1.0,2.3,0.4,Manchester United
+340,Casemiro,br BRA,MF,32,5.0,3,274.0,3.0,0.0,0.0,0.4,1.2,Manchester United
+341,Harry Maguire,eng ENG,DF,31,4.0,2,197.0,2.2,0.0,0.0,0.0,0.0,Manchester United
+342,Christian Eriksen,dk DEN,MF,32,4.0,2,170.0,1.9,0.0,0.0,0.0,1.3,Manchester United
+343,Mason Mount,eng ENG,"MF,FW",25,3.0,2,145.0,1.6,0.0,0.0,0.4,0.1,Manchester United
+344,Manuel Ugarte Ribeiro,uy URU,MF,23,3.0,1,105.0,1.2,0.0,0.0,0.0,0.0,Manchester United
+345,Toby Collyer,eng ENG,MF,20,1.0,0,45.0,0.5,0.0,0.0,0.0,0.1,Manchester United
+346,Rasmus Højlund,dk DEN,FW,21,2.0,0,33.0,0.4,0.0,0.0,0.0,0.0,Manchester United
+347,Jonny Evans,nir NIR,DF,36,2.0,0,24.0,0.3,0.0,0.0,0.0,0.0,Manchester United
+348,Scott McTominay,sct SCO,MF,27,2.0,0,19.0,0.2,0.0,0.0,0.1,0.0,Manchester United
+349,Antony,br BRA,FW,24,1.0,0,1.0,0.0,0.0,0.0,0.0,0.1,Manchester United
+350,Altay Bayındır,tr TUR,GK,26,0.0,0,,,,,,,Manchester United
+351,Tom Heaton,eng ENG,GK,38,0.0,0,,,,,,,Manchester United
+352,Victor Lindelöf,se SWE,DF,30,0.0,0,,,,,,,Manchester United
+353,Ethan Wheatley,eng ENG,FW,18,0.0,0,,,,,,,Manchester United
+354,Squad Total,,,26.1,6.0,66,540.0,6.0,5.0,5.0,10.4,9.5,Manchester United
+355,Opponent Total,,,26.8,6.0,66,540.0,6.0,8.0,7.0,10.8,8.6,Manchester United
+356,Max Kilman,eng ENG,DF,27,,6,540.0,6.0,0.0,1.0,0.3,0.2,West Ham United
+357,Jarrod Bowen,eng ENG,"FW,MF",27,,6,516.0,5.7,1.0,1.0,0.7,1.3,West Ham United
+358,Alphonse Areola,fr FRA,GK,31,,6,495.0,5.5,0.0,0.0,0.0,0.0,West Ham United
+359,Mohammed Kudus,gh GHA,"FW,MF",24,,6,493.0,5.5,0.0,0.0,0.6,0.7,West Ham United
+360,Guido Rodríguez,ar ARG,MF,30,,6,460.0,5.1,0.0,0.0,0.1,0.0,West Ham United
+361,Emerson Palmieri,it ITA,"DF,MF",30,,6,421.0,4.7,0.0,0.0,0.1,0.2,West Ham United
+362,Konstantinos Mavropanos,gr GRE,DF,26,,5,495.0,5.5,0.0,0.0,0.2,0.0,West Ham United
+363,Lucas Paquetá,br BRA,MF,27,,5,444.0,4.9,1.0,0.0,1.0,0.2,West Ham United
+364,Michail Antonio,jm JAM,FW,34,,5,359.0,4.0,0.0,1.0,1.3,0.2,West Ham United
+365,Aaron Wan-Bissaka,eng ENG,"DF,MF",26,,4,389.0,4.3,0.0,0.0,0.0,0.3,West Ham United
+366,Tomáš Souček,cz CZE,MF,29,,4,369.0,4.1,2.0,0.0,1.6,0.4,West Ham United
+367,Edson Álvarez,mx MEX,"MF,DF",26,,3,223.0,2.5,0.0,0.0,0.0,0.1,West Ham United
+368,Vladimír Coufal,cz CZE,DF,32,,2,200.0,2.2,0.0,0.0,0.0,0.1,West Ham United
+369,Crysencio Summerville,nl NED,"FW,MF",22,,1,136.0,1.5,0.0,0.0,0.1,0.3,West Ham United
+370,Jean-Clair Todibo,fr FRA,DF,24,,1,98.0,1.1,0.0,0.0,0.1,0.0,West Ham United
+371,Carlos Soler,es ESP,MF,27,,0,103.0,1.1,0.0,0.0,0.2,0.0,West Ham United
+372,Niclas Füllkrug,de GER,FW,31,,0,66.0,0.7,0.0,0.0,0.3,0.0,West Ham United
+373,Łukasz Fabiański,pl POL,GK,39,,0,45.0,0.5,0.0,0.0,0.0,0.0,West Ham United
+374,Danny Ings,eng ENG,"FW,MF",32,,0,31.0,0.3,1.0,0.0,0.5,0.0,West Ham United
+375,Aaron Cresswell,eng ENG,DF,34,,0,20.0,0.2,0.0,0.0,0.0,0.0,West Ham United
+376,Andy Irving,sct SCO,MF,24,,0,19.0,0.2,0.0,0.0,0.0,0.0,West Ham United
+377,James Ward-Prowse,eng ENG,MF,29,,0,18.0,0.2,0.0,0.0,0.0,0.0,West Ham United
+378,Kaelan Casey,eng ENG,DF,19,,0,,,,,,,West Ham United
+379,Luis Guilherme,br BRA,MF,18,,0,,,,,,,West Ham United
+380,Squad Total,,,28.6,,66,540.0,6.0,5.0,3.0,7.0,4.1,West Ham United
+381,Opponent Total,,,26.3,,66,540.0,6.0,10.0,10.0,10.4,9.3,West Ham United
+382,Leif Davis,eng ENG,DF,24,6.0,6,540.0,6.0,0.0,1.0,0.3,0.9,Ipswich Town
+383,Jacob Greaves,eng ENG,DF,24,6.0,6,540.0,6.0,0.0,0.0,0.1,0.0,Ipswich Town
+384,Sam Morsy,eg EGY,MF,33,6.0,6,533.0,5.9,1.0,0.0,0.2,0.1,Ipswich Town
+385,Omari Hutchinson,eng ENG,"MF,FW",20,6.0,6,532.0,5.9,0.0,1.0,0.4,0.6,Ipswich Town
+386,Axel Tuanzebe,cd COD,DF,26,6.0,6,512.0,5.7,0.0,0.0,0.2,0.2,Ipswich Town
+387,Liam Delap,eng ENG,FW,21,6.0,6,454.0,5.0,3.0,0.0,1.0,0.3,Ipswich Town
+388,Arijanet Muric,xk KVX,GK,25,5.0,5,450.0,5.0,0.0,0.0,0.0,0.0,Ipswich Town
+389,Sammie Szmodics,ie IRL,"FW,MF",29,6.0,4,288.0,3.2,1.0,0.0,1.0,0.0,Ipswich Town
+390,Dara O'Shea,ie IRL,DF,25,3.0,3,270.0,3.0,0.0,0.0,0.2,0.0,Ipswich Town
+391,Luke Woolfenden,eng ENG,DF,25,3.0,3,270.0,3.0,0.0,0.0,0.0,0.0,Ipswich Town
+392,Kalvin Phillips,eng ENG,MF,28,3.0,3,228.0,2.5,0.0,0.0,0.0,0.0,Ipswich Town
+393,Wes Burns,wls WAL,FW,29,4.0,3,208.0,2.3,0.0,0.0,0.2,0.6,Ipswich Town
+394,Chiedozie Ogbene,ie IRL,FW,27,3.0,2,187.0,2.1,0.0,0.0,0.0,0.1,Ipswich Town
+395,Massimo Luongo,au AUS,MF,32,4.0,2,142.0,1.6,0.0,0.0,0.0,0.0,Ipswich Town
+396,Jack Clarke,eng ENG,FW,23,4.0,1,160.0,1.8,0.0,1.0,0.3,0.8,Ipswich Town
+397,Ben Johnson,eng ENG,"DF,FW",24,3.0,1,133.0,1.5,0.0,1.0,0.0,0.3,Ipswich Town
+398,Conor Chaplin,eng ENG,"MF,FW",27,5.0,1,93.0,1.0,0.0,0.0,0.0,0.0,Ipswich Town
+399,Christian Walton,eng ENG,GK,28,1.0,1,90.0,1.0,0.0,0.0,0.0,0.0,Ipswich Town
+400,Jens Cajuste,se SWE,MF,25,2.0,1,80.0,0.9,0.0,0.0,0.0,0.1,Ipswich Town
+401,Jack Taylor,ie IRL,MF,26,4.0,0,97.0,1.1,0.0,0.0,0.0,0.0,Ipswich Town
+402,George Hirst,eng ENG,FW,25,3.0,0,51.0,0.6,0.0,0.0,0.5,0.0,Ipswich Town
+403,Marcus Harness,eng ENG,MF,28,2.0,0,45.0,0.5,0.0,0.0,0.0,0.0,Ipswich Town
+404,Ali Al Hamadi,iq IRQ,FW,22,3.0,0,35.0,0.4,0.0,0.0,0.0,0.0,Ipswich Town
+405,George Edmundson,eng ENG,DF,27,1.0,0,2.0,0.0,0.0,0.0,0.0,0.0,Ipswich Town
+406,Cameron Burgess,au AUS,DF,28,0.0,0,,,,,,,Ipswich Town
+407,Cieran Slicker,sct SCO,GK,22,0.0,0,,,,,,,Ipswich Town
+408,Conor Townsend,eng ENG,"DF,MF",31,0.0,0,,,,,,,Ipswich Town
+409,Squad Total,,,26.2,6.0,66,540.0,6.0,5.0,4.0,4.3,4.0,Ipswich Town
+410,Opponent Total,,,26.7,6.0,66,540.0,6.0,10.0,7.0,11.7,8.8,Ipswich Town
+411,Jordan Pickford,eng ENG,GK,30,,6,540.0,6.0,0.0,0.0,0.0,0.0,Everton
+412,James Tarkowski,eng ENG,DF,31,,6,540.0,6.0,0.0,0.0,0.6,0.4,Everton
+413,Dwight McNeil,eng ENG,"MF,FW",24,,6,532.0,5.9,3.0,2.0,0.5,2.4,Everton
+414,Dominic Calvert-Lewin,eng ENG,FW,27,,6,503.0,5.6,2.0,1.0,1.8,0.2,Everton
+415,Michael Keane,eng ENG,DF,31,,5,450.0,5.0,1.0,0.0,0.3,0.1,Everton
+416,Vitaliy Mykolenko,ua UKR,DF,25,,5,385.0,4.3,0.0,0.0,0.0,0.1,Everton
+417,Iliman Ndiaye,sn SEN,FW,24,,4,394.0,4.4,1.0,0.0,0.5,0.4,Everton
+418,Jack Harrison,eng ENG,FW,27,,4,368.0,4.1,0.0,0.0,0.8,0.9,Everton
+419,Tim Iroegbunam,eng ENG,MF,21,,4,360.0,4.0,0.0,0.0,0.2,0.1,Everton
+420,Idrissa Gana Gueye,sn SEN,MF,35,,4,340.0,3.8,0.0,0.0,0.1,0.0,Everton
+421,Ashley Young,eng ENG,DF,39,,4,335.0,3.7,0.0,2.0,0.0,0.2,Everton
+422,Abdoulaye Doucouré,ml MLI,MF,31,,4,306.0,3.4,0.0,0.0,0.2,0.0,Everton
+423,Orel Mangala,be BEL,MF,26,,2,199.0,2.2,0.0,0.0,0.1,0.1,Everton
+424,Jesper Lindstrøm,dk DEN,FW,24,,2,149.0,1.7,0.0,0.0,0.5,0.5,Everton
+425,James Garner,eng ENG,"DF,MF",23,,1,163.0,1.8,0.0,0.0,0.0,0.0,Everton
+426,Jarrad Branthwaite,eng ENG,DF,22,,1,90.0,1.0,0.0,0.0,0.0,0.0,Everton
+427,Séamus Coleman,ie IRL,DF,35,,1,90.0,1.0,0.0,0.0,0.6,0.0,Everton
+428,Roman Dixon,eng ENG,DF,19,,1,90.0,1.0,0.0,0.0,0.0,0.0,Everton
+429,Beto,gw GNB,FW,26,,0,47.0,0.5,0.0,0.0,0.0,0.0,Everton
+430,Jake O'Brien,ie IRL,DF,23,,0,27.0,0.3,0.0,0.0,0.0,0.0,Everton
+431,Mason Holgate,eng ENG,"FW,DF",27,,0,6.0,0.1,0.0,0.0,0.0,0.0,Everton
+432,Harrison Armstrong,eng ENG,MF,17,,0,1.0,0.0,0.0,0.0,0.0,0.0,Everton
+433,Asmir Begović,ba BIH,GK,37,,0,,,,,,,Everton
+434,Neal Maupay,fr FRA,"FW,MF",28,,0,,,,,,,Everton
+435,Jenson Metcalfe,eng ENG,MF,20,,0,,,,,,,Everton
+436,João Virgínia,pt POR,GK,24,,0,,,,,,,Everton
+437,Squad Total,,,28.6,,66,540.0,6.0,7.0,5.0,6.1,5.2,Everton
+438,Opponent Total,,,26.5,,66,540.0,6.0,15.0,12.0,9.9,7.8,Everton
+439,Wout Faes,be BEL,DF,26,,6,540.0,6.0,1.0,0.0,0.4,0.0,Leicester City
+440,Mads Hermansen,dk DEN,GK,24,,6,540.0,6.0,0.0,0.0,0.0,0.0,Leicester City
+441,James Justin,eng ENG,DF,26,,6,540.0,6.0,2.0,0.0,0.4,0.0,Leicester City
+442,Harry Winks,eng ENG,MF,28,,6,540.0,6.0,0.0,0.0,0.0,0.3,Leicester City
+443,Victor Bernth Kristiansen,dk DEN,DF,21,,6,534.0,5.9,0.0,0.0,0.0,0.1,Leicester City
+444,Wilfred Ndidi,ng NGA,MF,27,,6,522.0,5.8,0.0,4.0,0.2,1.3,Leicester City
+445,Jamie Vardy,eng ENG,FW,37,,6,500.0,5.6,2.0,0.0,1.4,0.2,Leicester City
+446,Caleb Okoli,it ITA,DF,23,,4,358.0,4.0,0.0,0.0,0.1,0.0,Leicester City
+447,Stephy Mavididi,eng ENG,FW,26,,3,304.0,3.4,2.0,0.0,0.7,0.3,Leicester City
+448,Facundo Buonanotte,ar ARG,"MF,FW",19,,3,290.0,3.2,1.0,2.0,0.4,0.6,Leicester City
+449,Jordan Ayew,gh GHA,FW,33,,3,273.0,3.0,0.0,0.0,0.3,0.1,Leicester City
+450,Abdul Fatawu Issahaku,gh GHA,FW,20,,3,268.0,3.0,0.0,1.0,0.1,0.5,Leicester City
+451,Oliver Skipp,eng ENG,MF,24,,3,266.0,3.0,0.0,0.0,0.0,0.1,Leicester City
+452,Jannik Vestergaard,dk DEN,DF,32,,2,180.0,2.0,0.0,0.0,0.0,0.0,Leicester City
+453,Bobby Reid,jm JAM,FW,31,,2,150.0,1.7,0.0,0.0,0.1,0.0,Leicester City
+454,Bilal El Khannouss,ma MAR,MF,20,,1,79.0,0.9,0.0,0.0,0.0,0.1,Leicester City
+455,Hamza Choudhury,eng ENG,MF,27,,0,15.0,0.2,0.0,0.0,0.0,0.0,Leicester City
+456,Kasey McAteer,ie IRL,"DF,FW",22,,0,12.0,0.1,0.0,0.0,0.0,0.0,Leicester City
+457,Boubakary Soumaré,fr FRA,MF,25,,0,12.0,0.1,0.0,0.0,0.0,0.0,Leicester City
+458,Odsonne Édouard,fr FRA,"FW,MF",26,,0,9.0,0.1,0.0,0.0,0.0,0.0,Leicester City
+459,Conor Coady,eng ENG,DF,31,,0,8.0,0.1,0.0,0.0,0.0,0.0,Leicester City
+460,Thomas Cannon,ie IRL,FW,21,,0,,,,,,,Leicester City
+461,Daniel Iversen,dk DEN,GK,27,,0,,,,,,,Leicester City
+462,Benjamin Nelson,eng ENG,DF,20,,0,,,,,,,Leicester City
+463,Ricardo Pereira,pt POR,"DF,FW",30,,0,,,,,,,Leicester City
+464,Danny Ward,wls WAL,GK,31,,0,,,,,,,Leicester City
+465,Squad Total,,,26.7,,66,540.0,6.0,8.0,7.0,4.3,3.5,Leicester City
+466,Opponent Total,,,26.9,,66,540.0,6.0,11.0,9.0,12.3,8.6,Leicester City
+467,Marc Guéhi,eng ENG,DF,24,,6,540.0,6.0,1.0,0.0,0.2,0.0,Crystal Palace
+468,Dean Henderson,eng ENG,GK,27,,6,540.0,6.0,0.0,0.0,0.0,0.0,Crystal Palace
+469,Eberechi Eze,eng ENG,"MF,FW",26,,6,539.0,6.0,1.0,0.0,2.3,0.6,Crystal Palace
+470,Tyrick Mitchell,eng ENG,"DF,MF",25,,6,538.0,6.0,0.0,1.0,0.2,1.3,Crystal Palace
+471,Daniel Muñoz,co COL,"DF,MF",28,,6,530.0,5.9,0.0,0.0,0.3,0.3,Crystal Palace
+472,Adam Wharton,eng ENG,MF,20,,6,476.0,5.3,0.0,0.0,0.2,0.6,Crystal Palace
+473,Jean-Philippe Mateta,fr FRA,FW,27,,6,428.0,4.8,2.0,0.0,1.7,0.4,Crystal Palace
+474,Daichi Kamada,jp JPN,MF,28,,4,362.0,4.0,0.0,0.0,0.2,0.2,Crystal Palace
+475,Chris Richards,us USA,DF,24,,4,344.0,3.8,0.0,0.0,0.1,0.0,Crystal Palace
+476,Maxence Lacroix,fr FRA,DF,24,,3,270.0,3.0,0.0,1.0,0.2,0.2,Crystal Palace
+477,Eddie Nketiah,eng ENG,"MF,FW",25,,3,227.0,2.5,0.0,0.0,0.6,0.1,Crystal Palace
+478,Jefferson Lerma,co COL,"MF,DF",29,,2,214.0,2.4,0.0,0.0,0.1,0.8,Crystal Palace
+479,Will Hughes,eng ENG,MF,29,,2,204.0,2.3,0.0,0.0,0.0,0.0,Crystal Palace
+480,Nathaniel Clyne,eng ENG,DF,33,,2,153.0,1.7,0.0,0.0,0.0,0.0,Crystal Palace
+481,Odsonne Édouard,fr FRA,"MF,FW",26,,1,115.0,1.3,0.0,0.0,0.4,0.0,Crystal Palace
+482,Cheick Doucouré,ml MLI,MF,24,,1,93.0,1.0,0.0,0.0,0.0,0.0,Crystal Palace
+483,Joachim Andersen,dk DEN,DF,28,,1,90.0,1.0,0.0,0.0,0.0,0.0,Crystal Palace
+484,Chadi Riad,ma MAR,DF,21,,1,90.0,1.0,0.0,0.0,0.0,0.0,Crystal Palace
+485,Ismaila Sarr,sn SEN,"FW,MF",26,,0,133.0,1.5,0.0,0.0,0.5,0.9,Crystal Palace
+486,Jeffrey Schlupp,gh GHA,"MF,DF",31,,0,33.0,0.4,0.0,0.0,0.0,0.1,Crystal Palace
+487,Jordan Ayew,gh GHA,"FW,MF",33,,0,21.0,0.2,0.0,0.0,0.5,0.0,Crystal Palace
+488,Asher Agbinone,eng ENG,MF,19,,0,,,,,,,Crystal Palace
+489,Naouirou Ahamada,fr FRA,MF,22,,0,,,,,,,Crystal Palace
+490,Trevoh Chalobah,eng ENG,"DF,MF",25,,0,,,,,,,Crystal Palace
+491,Justin Devenny,nir NIR,MF,20,,0,,,,,,,Crystal Palace
+492,Rob Holding,eng ENG,DF,29,,0,,,,,,,Crystal Palace
+493,Sam Johnstone,eng ENG,GK,31,,0,,,,,,,Crystal Palace
+494,Remi Matthews,eng ENG,GK,30,,0,,,,,,,Crystal Palace
+495,Kaden Rodney,eng ENG,DF,19,,0,,,,,,,Crystal Palace
+496,Matt Turner,us USA,GK,30,,0,,,,,,,Crystal Palace
+497,Franco Umeh-Chibueze,ie IRL,MF,19,,0,,,,,,,Crystal Palace
+498,Joel Ward,eng ENG,"DF,MF",34,,0,,,,,,,Crystal Palace
+499,Squad Total,,,26.2,,66,540.0,6.0,4.0,2.0,7.5,5.6,Crystal Palace
+500,Opponent Total,,,26.8,,66,540.0,6.0,9.0,6.0,9.0,6.6,Crystal Palace
+501,Flynn Downes,eng ENG,MF,25,,6,540.0,6.0,0.0,0.0,0.2,0.8,Southampton
+502,Jan Bednarek,pl POL,DF,28,,6,530.0,5.9,0.0,0.0,0.0,0.1,Southampton
+503,Yukinari Sugawara,jp JPN,DF,24,,6,475.0,5.3,1.0,0.0,0.3,1.1,Southampton
+504,Taylor Harwood-Bellis,eng ENG,DF,22,,5,410.0,4.6,1.0,0.0,0.3,0.1,Southampton
+505,Ben Brereton,cl CHI,FW,25,,4,389.0,4.3,0.0,0.0,0.8,0.1,Southampton
+506,Aaron Ramsdale,eng ENG,GK,26,,4,360.0,4.0,0.0,0.0,0.0,0.0,Southampton
+507,Kyle Walker-Peters,eng ENG,DF,27,,4,350.0,3.9,0.0,0.0,0.2,0.0,Southampton
+508,Jack Stephens,eng ENG,DF,30,,4,348.0,3.9,0.0,0.0,0.2,0.0,Southampton
+509,Mateus Fernandes,pt POR,MF,20,,3,298.0,3.3,0.0,0.0,0.3,0.7,Southampton
+510,Tyler Dibling,eng ENG,"FW,MF",18,,3,281.0,3.1,1.0,0.0,0.8,0.7,Southampton
+511,Joe Aribo,ng NGA,MF,28,,3,271.0,3.0,0.0,0.0,0.6,0.7,Southampton
+512,William Smallbone,ie IRL,MF,24,,3,218.0,2.4,0.0,0.0,0.3,0.3,Southampton
+513,Adam Armstrong,eng ENG,FW,27,,3,214.0,2.4,0.0,0.0,0.8,0.1,Southampton
+514,Cameron Archer,eng ENG,FW,23,,2,220.0,2.4,0.0,0.0,2.3,0.0,Southampton
+515,Charlie Taylor,eng ENG,DF,31,,2,195.0,2.2,0.0,0.0,0.0,0.1,Southampton
+516,Alex McCarthy,eng ENG,GK,34,,2,180.0,2.0,0.0,0.0,0.0,0.0,Southampton
+517,Lesley Ugochukwu,fr FRA,MF,20,,2,140.0,1.6,0.0,0.0,0.2,0.2,Southampton
+518,Ryan Fraser,sct SCO,FW,30,,2,130.0,1.4,0.0,0.0,0.0,0.0,Southampton
+519,Adam Lallana,eng ENG,MF,36,,1,116.0,1.3,0.0,2.0,0.2,0.8,Southampton
+520,Maxwel Cornet,ci CIV,FW,28,,1,72.0,0.8,0.0,0.0,0.2,0.0,Southampton
+521,Ross Stewart,sct SCO,"FW,MF",28,,0,106.0,1.2,0.0,0.0,0.1,0.0,Southampton
+522,Samuel Edozie,eng ENG,"DF,FW",21,,0,65.0,0.7,0.0,0.0,0.0,0.1,Southampton
+523,Carlos Alcaraz,ar ARG,MF,21,,0,10.0,0.1,0.0,0.0,0.1,0.1,Southampton
+524,Samuel Amo-Ameyaw,eng ENG,DF,18,,0,10.0,0.1,0.0,0.0,0.0,0.1,Southampton
+525,James Bree,eng ENG,"DF,MF",26,,0,,,,,,,Southampton
+526,Joe Lumley,eng ENG,GK,29,,0,,,,,,,Southampton
+527,Paul Onuachu,ng NGA,FW,30,,0,,,,,,,Southampton
+528,Nathan Wood-Gordon,eng ENG,DF,22,,0,,,,,,,Southampton
+529,Squad Total,,,26.1,,66,540.0,6.0,3.0,2.0,7.5,6.0,Southampton
+530,Opponent Total,,,26.4,,66,540.0,6.0,12.0,8.0,10.9,9.1,Southampton
+531,Mario Lemina,ga GAB,"MF,FW",31,,6,539.0,6.0,1.0,1.0,0.8,0.2,Wolverhampton Wanderers
+532,João Gomes,br BRA,MF,23,,6,493.0,5.5,0.0,0.0,0.2,0.0,Wolverhampton Wanderers
+533,Jørgen Strand Larsen,no NOR,FW,24,,6,474.0,5.3,1.0,1.0,1.0,0.8,Wolverhampton Wanderers
+534,Rayan Aït-Nouri,dz ALG,"DF,MF",23,,6,473.0,5.3,1.0,1.0,0.9,0.7,Wolverhampton Wanderers
+535,Jean-Ricner Bellegarde,fr FRA,"MF,FW",26,,6,388.0,4.3,1.0,0.0,0.3,0.2,Wolverhampton Wanderers
+536,Matheus Cunha,br BRA,"MF,FW",25,,5,461.0,5.1,2.0,0.0,1.5,0.8,Wolverhampton Wanderers
+537,Yerson Mosquera,co COL,DF,23,,5,441.0,4.9,0.0,0.0,0.3,0.1,Wolverhampton Wanderers
+538,Toti Gomes,pt POR,DF,25,,4,360.0,4.0,0.0,1.0,0.0,0.5,Wolverhampton Wanderers
+539,Sam Johnstone,eng ENG,GK,31,,4,360.0,4.0,0.0,0.0,0.0,0.0,Wolverhampton Wanderers
+540,Nélson Semedo,pt POR,DF,30,,4,330.0,3.7,0.0,0.0,0.0,0.1,Wolverhampton Wanderers
+541,Craig Dawson,eng ENG,DF,34,,3,301.0,3.3,0.0,0.0,0.1,0.0,Wolverhampton Wanderers
+542,André,br BRA,MF,23,,3,261.0,2.9,0.0,0.0,0.1,0.1,Wolverhampton Wanderers
+543,Hwang Hee-chan,kr KOR,"FW,MF",28,,2,222.0,2.5,0.0,0.0,0.0,0.1,Wolverhampton Wanderers
+544,Matt Doherty,ie IRL,DF,32,,2,210.0,2.3,0.0,0.0,0.1,0.1,Wolverhampton Wanderers
+545,José Sá,pt POR,GK,31,,2,180.0,2.0,0.0,0.0,0.0,0.1,Wolverhampton Wanderers
+546,Rodrigo Gomes,pt POR,"FW,MF",21,,1,117.0,1.3,0.0,0.0,0.1,0.0,Wolverhampton Wanderers
+547,Santiago Bueno,uy URU,DF,25,,1,85.0,0.9,0.0,0.0,0.0,0.0,Wolverhampton Wanderers
+548,Tommy Doyle,eng ENG,MF,22,,0,69.0,0.8,0.0,0.0,0.0,0.0,Wolverhampton Wanderers
+549,Daniel Podence,pt POR,"MF,FW",28,,0,48.0,0.5,0.0,0.0,0.0,0.0,Wolverhampton Wanderers
+550,Gonçalo Guedes,pt POR,"FW,MF",27,,0,47.0,0.5,0.0,0.0,0.0,0.0,Wolverhampton Wanderers
+551,Carlos Forbs,pt POR,MF,20,,0,44.0,0.5,0.0,0.0,0.1,0.0,Wolverhampton Wanderers
+552,Pablo Sarabia,es ESP,"FW,MF",32,,0,30.0,0.3,0.0,0.0,0.1,0.0,Wolverhampton Wanderers
+553,Chiquinho,pt POR,MF,24,,0,7.0,0.1,0.0,0.0,0.0,0.0,Wolverhampton Wanderers
+554,Daniel Bentley,eng ENG,GK,31,,0,,,,,,,Wolverhampton Wanderers
+555,Alfie Pond,eng ENG,DF,20,,0,,,,,,,Wolverhampton Wanderers
+556,Boubacar Traoré,ml MLI,MF,23,,0,,,,,,,Wolverhampton Wanderers
+557,Squad Total,,,27.0,,66,540.0,6.0,6.0,4.0,5.5,4.0,Wolverhampton Wanderers
+558,Opponent Total,,,26.4,,66,540.0,6.0,16.0,14.0,9.7,7.8,Wolverhampton Wanderers
