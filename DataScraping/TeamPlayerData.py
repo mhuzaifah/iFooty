@@ -4,10 +4,11 @@ import requests
 import time
 from io import StringIO
 import re
-import newspaper
-from datetime import datetime, timedelta
-from pytz import timezone, utc
 import psycopg2
+from dotenv import load_dotenv
+import os
+
+load_dotenv(dotenv_path='../.env')
 
 def getTeamAndPlayerData():
     #Collections for storing scraped data and later converting to csv files
@@ -20,13 +21,6 @@ def getTeamAndPlayerData():
         "goals_per_game" : []
     }
     pl_players = []
-    pl_news = {
-        "title" : [],
-        "body" : [],
-        "date" : [],
-        "team" : [],
-        "summary" : []
-    }
 
     #Parsing Website to get the current PL Table
     html = requests.get('https://fbref.com/en/comps/9/Premier-League-Stats').text
@@ -55,8 +49,12 @@ def getTeamAndPlayerData():
         player_stats_table = soup.find_all('table', class_='stats_table')[0]
         players_data = pd.read_html(StringIO(str(player_stats_table)))[0]
         players_data['Team'] = name
-        players_data.rename(columns={'90s': 'nineties'}, inplace=True)
-        players_data[('Unnamed: 3_level_0', 'Age')] = players_data[('Unnamed: 3_level_0', 'Age')].apply(lambda x: x.split('-')[0] if isinstance(x, str) else x)
+        players_data.rename(columns={'90s': 'nineties'}, inplace=True) #renaming 90s column 
+        players_data[('Unnamed: 3_level_0', 'Age')] = players_data[('Unnamed: 3_level_0', 'Age')].apply(lambda x: x.split('-')[0] if isinstance(x, str) else x) #adjusting the age information
+        players_data[('Unnamed: 1_level_0', 'Nation')] = players_data[('Unnamed: 1_level_0', 'Nation')].apply(lambda x: x.split(' ')[1] if isinstance(x, str) else x) #adjusting the nation information 
+        players_data = players_data.drop(players_data.tail(2).index) #removing last 2 rows (irrelavant information)
+        players_data = players_data.rename(columns={ 'Player' : 'Name' })
+        players_data = players_data.rename(columns={ 'Min' : 'Mins' })
         pl_players.append(players_data)
         
 
@@ -82,7 +80,6 @@ def getTeamAndPlayerData():
         # Sleep to improve scraping perfomance/accuracy
         time.sleep(5)
 
-
     # Converting team and player data into csv files
     players_df = pd.concat(pl_players)
     players_df.columns = players_df.columns.droplevel() # removing header and making second row new header
@@ -90,28 +87,34 @@ def getTeamAndPlayerData():
     players_df = players_df.drop(players_df.columns[[10,11,12,13,14,15,17,19,20,21,22,27,30,33]], axis=1) # remove unwanted columns
     players_df = players_df.loc[:, ~players_df.columns.duplicated()] # retain only the first occurrence of each column
     players_df.rename(columns={'':'Team'}, inplace=True) # naming Team column
-    players_df.to_csv('pl_players.csv')
+    # players_df.to_csv('pl_players.csv')
 
     teams_df = pd.DataFrame(pl_teams, index=teams)
-    teams_df.to_csv('pl_teams.csv')
+    # teams_df.to_csv('pl_teams.csv')
+    
+    return players_df, teams_df
     
 
 # Function to import CSV into PostgreSQL
-def importCSVtoPostgreSQL(csvFile, tableName, pk):
-    df = pd.read_csv(csvFile)
+def importCSVtoPostgreSQL(df, tableName, pk):
+    
     columns = df.columns.tolist()
 
+    # Connecting to database
+    db_password = os.getenv('DB_PASSWORD')
+    print(db_password)
     conn = psycopg2.connect(database = "ifooty", 
                             user = "postgres", 
                             host= 'localhost',
+                            password = "Huzi@1975",
                             port = 5432)
     curr = conn.cursor()    
     
     # Loop through the rows in the DataFrame and update each row based on the primary key
-    for i, row in df.iterrows():
+    for _, row in df.iterrows():
         
         # Generate the SQL UPDATE query for each row
-        setClause = ', '.join([f"{col} = %s" for col in columns[1:]]) #Pop since we don't want to include PK
+        setClause = ', '.join([f"{col} = %s" for col in columns[1:]]) #Splice 1st elem since we don't want to include PK
         updateQuery = f"""
         UPDATE {tableName}
         SET {setClause}
@@ -120,14 +123,15 @@ def importCSVtoPostgreSQL(csvFile, tableName, pk):
         
         values = row.iloc[1:].tolist() + [row.iloc[0]] # Collect all values in list to dynamically add to query
         curr.execute(updateQuery, values) # Execute the query with the column values from the CSV
-
     conn.commit()
+    
     curr.close()
     conn.close()
 
-getTeamAndPlayerData()
-importCSVtoPostgreSQL('pl_players.csv', 'player_data', 'id') 
-importCSVtoPostgreSQL('pl_teams.csv', 'team_data', 'name') 
+playersDf, teamsDf = getTeamAndPlayerData()
+importCSVtoPostgreSQL(playersDf, 'player_data', 'id') 
+importCSVtoPostgreSQL(teamsDf, 'team_data', 'name') 
+
 
 
 
