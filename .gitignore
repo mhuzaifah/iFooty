@@ -1,3 +1,4 @@
 .DS_Store
 .env
 ML/env/
+Backend/src/main/resources/application.properties
