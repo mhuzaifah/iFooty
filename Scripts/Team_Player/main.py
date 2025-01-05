@@ -10,7 +10,7 @@ def updateDB(df, tableName, pk):
     user = os.environ['DB_USER']
     host = os.environ['DB_HOST']
     port = os.environ['DB_PORT']
-    dbPass = os.environ['DB_PASSWORD']
+    dbPass = os.environ['DB_PASS']
     conn = psycopg2.connect(database = db, 
                             user = user, 
                             host = host,
