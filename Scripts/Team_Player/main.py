@@ -39,7 +39,7 @@ def updateDB(df, tableName, pk):
     conn.close()
 
 
-def main(request):
+def main():
 
     """
     Main function to scrape data and update the PostgreSQL database.
