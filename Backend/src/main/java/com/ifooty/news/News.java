@@ -8,12 +8,12 @@ import java.util.Date;
 
 @Entity
 @EntityListeners(NewsEntityListener.class)
-@Table(name="news_data")
+@Table(name="pl_news")
 public class News implements Serializable {
 
     @Id
-    @Column(name="id", unique = true)
-    private String id;
+    @Column(name = "id", unique = true)
+    private Integer id;
     private String title;
     private String body;
     private Date date;
@@ -25,14 +25,14 @@ public class News implements Serializable {
 
     public News() {}
 
-    public News(String id, String title, String body, Date date) {
+    public News(Integer id, String title, String body, Date date) {
         this.id = id;
         this.title = title;
         this.body = body;
         this.date = date;
     }
 
-    public News(String id, String title, String body, Date date, Team team) {
+    public News(Integer id, String title, String body, Date date, Team team) {
         this.id = id;
         this.title = title;
         this.body = body;
@@ -40,7 +40,7 @@ public class News implements Serializable {
         this.team = team;
     }
 
-    public String getId() { return id; }
+    public Integer getId() { return id; }
 
     public String getTitle() {
         return title;
@@ -60,7 +60,7 @@ public class News implements Serializable {
 
     public String getSummary() { return summary; }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

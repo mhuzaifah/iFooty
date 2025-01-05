@@ -24,7 +24,7 @@ export const TeamsProvider = ({ children }) => {
         }
     }
 
-    //Right now only one league, must change when more leagures are introduced
+    //Right now only one league, must change when more leagues are introduced
     const getAllTeams = async () => {
         try {
             axios.get('http://localhost:8080/api/teams')

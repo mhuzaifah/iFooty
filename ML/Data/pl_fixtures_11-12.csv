@@ -1,0 +1,381 @@
+,Home,Away,Score,HomeRec,AwayRec
+0,QPR,Bolton,0–4,0-0-0,0-0-0
+1,Liverpool,Sunderland,1–1,0-0-0,0-0-0
+2,Wigan Athletic,Norwich City,1–1,0-0-0,0-0-0
+3,Fulham,Aston Villa,0–0,0-0-0,0-0-0
+4,Newcastle Utd,Arsenal,0–0,0-0-0,0-0-0
+5,Blackburn,Wolves,1–2,0-0-0,0-0-0
+6,West Brom,Manchester Utd,1–2,0-0-0,0-0-0
+7,Stoke City,Chelsea,0–0,0-0-0,0-0-0
+8,Manchester City,Swansea City,4–0,0-0-0,0-0-0
+9,Swansea City,Wigan Athletic,0–0,0-0-1,0-1-0
+10,Arsenal,Liverpool,0–2,0-1-0,0-1-0
+11,Chelsea,West Brom,2–1,0-1-0,0-0-1
+12,Aston Villa,Blackburn,3–1,0-1-0,0-0-1
+13,Everton,QPR,0–1,0-0-0,0-0-1
+14,Sunderland,Newcastle Utd,0–1,0-1-0,0-1-0
+15,Wolves,Fulham,2–0,1-0-0,0-1-0
+16,Bolton,Manchester City,2–3,1-0-0,1-0-0
+17,Norwich City,Stoke City,1–1,0-1-0,0-1-0
+18,Manchester Utd,Tottenham,3–0,1-0-0,0-0-0
+19,Aston Villa,Wolves,0–0,1-1-0,2-0-0
+20,Chelsea,Norwich City,3–1,1-1-0,0-2-0
+21,Liverpool,Bolton,3–1,1-1-0,1-0-1
+22,Swansea City,Sunderland,0–0,0-1-1,0-1-1
+23,Wigan Athletic,QPR,2–0,0-2-0,1-0-1
+24,Blackburn,Everton,0–1,0-0-2,0-0-1
+25,West Brom,Stoke City,0–1,0-0-2,0-2-0
+26,Tottenham,Manchester City,1–5,0-0-1,2-0-0
+27,Manchester Utd,Arsenal,8–2,2-0-0,0-1-1
+28,Newcastle Utd,Fulham,2–1,1-1-0,0-1-1
+29,Sunderland,Chelsea,1–2,0-2-1,2-1-0
+30,Arsenal,Swansea City,1–0,0-1-2,0-2-1
+31,Manchester City,Wigan Athletic,3–0,3-0-0,1-2-0
+32,Bolton,Manchester Utd,0–5,1-0-2,3-0-0
+33,Stoke City,Liverpool,1–0,1-2-0,2-1-0
+34,Wolves,Tottenham,0–2,2-1-0,0-0-2
+35,Everton,Aston Villa,2–2,1-0-1,1-2-0
+36,Fulham,Blackburn,1–1,0-1-2,0-0-3
+37,Norwich City,West Brom,0–1,0-2-1,0-0-3
+38,QPR,Newcastle Utd,0–0,1-0-2,2-1-0
+39,Aston Villa,Newcastle Utd,1–1,1-3-0,2-2-0
+40,Wolves,QPR,0–3,2-1-1,1-1-2
+41,Everton,Wigan Athletic,3–1,1-1-1,1-2-1
+42,Swansea City,West Brom,3–0,0-2-2,1-0-3
+43,Bolton,Norwich City,1–2,1-0-3,0-2-2
+44,Blackburn,Arsenal,4–3,0-1-3,1-1-2
+45,Fulham,Manchester City,2–2,0-2-2,4-0-0
+46,Manchester Utd,Chelsea,3–1,4-0-0,3-1-0
+47,Tottenham,Liverpool,4–0,1-0-2,2-1-1
+48,Sunderland,Stoke City,4–0,0-2-2,2-2-0
+49,Stoke City,Manchester Utd,1–1,2-2-1,5-0-0
+50,Liverpool,Wolves,2–1,2-1-2,2-1-2
+51,West Brom,Fulham,0–0,1-0-4,0-3-2
+52,Chelsea,Swansea City,4–1,3-1-1,1-2-2
+53,Wigan Athletic,Tottenham,1–2,1-2-2,2-0-2
+54,Newcastle Utd,Blackburn,3–1,2-3-0,1-1-3
+55,Arsenal,Bolton,3–0,1-1-3,1-0-4
+56,Manchester City,Everton,2–0,4-1-0,2-1-1
+57,QPR,Aston Villa,1–1,2-1-2,1-4-0
+58,Norwich City,Sunderland,2–1,1-2-2,1-2-2
+59,Wolves,Newcastle Utd,1–2,2-1-3,3-3-0
+60,Sunderland,West Brom,2–2,1-2-3,1-1-4
+61,Manchester Utd,Norwich City,2–0,5-1-0,2-2-2
+62,Blackburn,Manchester City,0–4,1-1-4,5-1-0
+63,Everton,Liverpool,0–2,2-1-2,3-1-2
+64,Aston Villa,Wigan Athletic,2–0,1-5-0,1-2-3
+65,Bolton,Chelsea,1–5,1-0-5,4-1-1
+66,Tottenham,Arsenal,2–1,3-0-2,2-1-3
+67,Fulham,QPR,6–0,0-4-2,2-2-2
+68,Swansea City,Stoke City,2–0,1-2-3,2-3-1
+69,Wigan Athletic,Bolton,1–3,1-2-4,1-0-6
+70,Norwich City,Swansea City,3–1,2-2-3,2-2-3
+71,Stoke City,Fulham,2–0,2-3-2,1-4-2
+72,Chelsea,Everton,3–1,5-1-1,2-1-3
+73,QPR,Blackburn,1–1,2-2-3,1-1-5
+74,Liverpool,Manchester Utd,1–1,4-1-2,6-1-0
+75,Manchester City,Aston Villa,4–1,6-1-0,2-5-0
+76,Newcastle Utd,Tottenham,2–2,4-3-0,4-0-2
+77,Arsenal,Sunderland,2–1,2-1-4,1-3-3
+78,West Brom,Wolves,2–0,1-2-4,2-1-4
+79,Liverpool,Norwich City,1–1,4-2-2,3-2-3
+80,Bolton,Sunderland,0–2,2-0-6,1-3-4
+81,Newcastle Utd,Wigan Athletic,1–0,4-4-0,1-2-5
+82,Wolves,Swansea City,2–2,2-1-5,2-2-4
+83,Aston Villa,West Brom,1–2,2-5-1,2-2-4
+84,Fulham,Everton,1–3,1-4-3,2-1-4
+85,QPR,Chelsea,1–0,2-3-3,6-1-1
+86,Blackburn,Tottenham,1–2,1-2-5,4-1-2
+87,Arsenal,Stoke City,3–1,3-1-4,3-3-2
+88,Manchester Utd,Manchester City,1–6,6-2-0,7-1-0
+89,Manchester City,Wolves,3–1,8-1-0,2-2-5
+90,West Brom,Liverpool,0–2,3-2-4,4-3-2
+91,Chelsea,Arsenal,3–5,6-1-2,4-1-4
+92,Everton,Manchester Utd,0–1,3-1-4,6-2-1
+93,Sunderland,Aston Villa,2–2,2-3-4,2-5-2
+94,Swansea City,Bolton,3–1,2-3-4,2-0-7
+95,Norwich City,Blackburn,3–3,3-3-3,1-2-6
+96,Wigan Athletic,Fulham,0–2,1-2-6,1-4-4
+97,Tottenham,QPR,3–1,5-1-2,3-3-3
+98,Stoke City,Newcastle Utd,1–3,3-3-3,5-4-0
+99,Aston Villa,Norwich City,3–2,2-6-2,3-4-3
+100,Blackburn,Chelsea,0–1,1-3-6,6-1-3
+101,Newcastle Utd,Everton,2–1,6-4-0,3-1-5
+102,Liverpool,Swansea City,0–0,5-3-2,3-3-4
+103,QPR,Manchester City,2–3,3-3-4,9-1-0
+104,Manchester Utd,Sunderland,1–0,7-2-1,2-4-4
+105,Arsenal,West Brom,3–0,5-1-4,3-2-5
+106,Fulham,Tottenham,1–3,2-4-4,6-1-2
+107,Bolton,Stoke City,5–0,2-0-8,3-3-4
+108,Wolves,Wigan Athletic,3–1,2-2-6,1-2-7
+109,West Brom,Bolton,2–1,3-2-6,3-0-8
+110,Wigan Athletic,Blackburn,3–3,1-2-8,1-3-7
+111,Norwich City,Arsenal,1–2,3-4-4,6-1-4
+112,Stoke City,QPR,2–3,3-3-5,3-3-5
+113,Sunderland,Fulham,0–0,2-4-5,2-4-5
+114,Swansea City,Manchester Utd,0–1,3-4-4,8-2-1
+115,Everton,Wolves,2–1,3-1-6,3-2-6
+116,Manchester City,Newcastle Utd,3–1,10-1-0,7-4-0
+117,Chelsea,Liverpool,1–2,7-1-3,5-4-2
+118,Tottenham,Aston Villa,2–0,7-1-2,3-6-2
+119,Norwich City,QPR,2–1,3-4-5,4-3-5
+120,Manchester Utd,Newcastle Utd,1–1,9-2-1,7-4-1
+121,Stoke City,Blackburn,3–1,3-3-6,1-4-7
+122,West Brom,Tottenham,1–3,4-2-6,8-1-2
+123,Sunderland,Wigan Athletic,1–2,2-5-5,1-3-8
+124,Arsenal,Fulham,1–1,7-1-4,2-5-5
+125,Bolton,Everton,0–2,3-0-9,4-1-6
+126,Chelsea,Wolves,3–0,7-1-4,3-2-7
+127,Liverpool,Manchester City,1–1,6-4-2,11-1-0
+128,Swansea City,Aston Villa,0–0,3-4-5,3-6-3
+129,Tottenham,Bolton,3–0,9-1-2,3-0-10
+130,Aston Villa,Manchester Utd,0–1,3-7-3,9-3-1
+131,Blackburn,Swansea City,4–2,1-4-8,3-5-5
+132,Newcastle Utd,Chelsea,0–3,7-5-1,8-1-4
+133,Wigan Athletic,Arsenal,0–4,2-3-8,7-2-4
+134,QPR,West Brom,1–1,4-3-6,4-2-7
+135,Manchester City,Norwich City,5–1,11-2-0,4-4-5
+136,Wolves,Sunderland,2–1,3-2-8,2-5-6
+137,Everton,Stoke City,0–1,5-1-6,4-3-6
+138,Fulham,Liverpool,1–0,2-6-5,6-5-2
+139,West Brom,Wigan Athletic,1–2,4-3-7,2-3-9
+140,Norwich City,Newcastle Utd,4–2,4-4-6,7-5-2
+141,Liverpool,QPR,1–0,6-5-3,4-4-6
+142,Bolton,Aston Villa,1–2,3-0-11,3-7-4
+143,Swansea City,Fulham,2–0,3-5-6,3-6-5
+144,Manchester Utd,Wolves,4–1,10-3-1,4-2-8
+145,Arsenal,Everton,1–0,8-2-4,5-1-7
+146,Sunderland,Blackburn,2–1,2-5-7,2-4-8
+147,Stoke City,Tottenham,2–1,5-3-6,10-1-2
+148,Chelsea,Manchester City,2–1,9-1-4,12-2-0
+149,Blackburn,West Brom,1–2,2-4-9,4-3-8
+150,Newcastle Utd,Swansea City,0–0,7-5-3,4-5-6
+151,Wigan Athletic,Chelsea,1–1,3-3-9,10-1-4
+152,Wolves,Stoke City,1–2,4-2-9,6-3-6
+153,Everton,Norwich City,1–1,5-1-8,5-4-6
+154,Fulham,Bolton,2–0,3-6-6,3-0-12
+155,QPR,Manchester Utd,0–2,4-4-7,11-3-1
+156,Tottenham,Sunderland,1–0,10-1-3,3-5-7
+157,Manchester City,Arsenal,1–0,12-2-1,9-2-4
+158,Aston Villa,Liverpool,0–2,4-7-4,7-5-3
+159,Wolves,Norwich City,2–2,4-2-10,5-5-6
+160,Blackburn,Bolton,1–2,2-4-10,3-0-13
+161,Everton,Swansea City,1–0,5-2-8,4-6-6
+162,Fulham,Manchester Utd,0–5,4-6-6,12-3-1
+163,QPR,Sunderland,2–3,4-4-8,3-5-8
+164,Aston Villa,Arsenal,1–2,4-7-5,9-2-5
+165,Manchester City,Stoke City,3–0,13-2-1,7-3-6
+166,Wigan Athletic,Liverpool,0–0,3-4-9,8-5-3
+167,Newcastle Utd,West Brom,2–3,7-6-3,5-3-8
+168,Tottenham,Chelsea,1–1,11-1-3,10-2-4
+169,Liverpool,Blackburn,1–1,8-6-3,2-4-11
+170,Sunderland,Everton,1–1,4-5-8,6-2-8
+171,West Brom,Manchester City,0–0,6-3-8,14-2-1
+172,Manchester Utd,Wigan Athletic,5–0,13-3-1,3-5-9
+173,Bolton,Newcastle Utd,0–2,4-0-13,7-6-4
+174,Chelsea,Fulham,1–1,10-3-4,4-6-7
+175,Stoke City,Aston Villa,0–0,7-3-7,4-7-6
+176,Arsenal,Wolves,1–1,10-2-5,4-3-10
+177,Swansea City,QPR,1–1,4-6-7,4-4-9
+178,Norwich City,Tottenham,0–2,5-6-6,11-2-3
+179,Liverpool,Newcastle Utd,3–1,8-7-3,8-6-4
+180,Arsenal,QPR,1–0,10-3-5,4-5-9
+181,Bolton,Wolves,1–1,4-0-14,4-4-10
+182,Norwich City,Fulham,1–1,5-6-7,4-7-7
+183,Chelsea,Aston Villa,1–3,10-4-4,4-8-6
+184,Manchester Utd,Blackburn,2–3,14-3-1,2-5-11
+185,Swansea City,Tottenham,1–1,4-7-7,12-2-3
+186,Stoke City,Wigan Athletic,2–2,7-4-7,3-5-10
+187,West Brom,Everton,0–1,6-4-8,6-3-8
+188,Sunderland,Manchester City,1–0,4-6-8,14-3-1
+189,Blackburn,Stoke City,1–2,3-5-11,7-5-7
+190,Aston Villa,Swansea City,0–2,5-8-6,4-8-7
+191,Wolves,Chelsea,1–2,4-5-10,10-4-5
+192,QPR,Norwich City,1–2,4-5-10,5-7-7
+193,Fulham,Arsenal,2–1,4-8-7,11-3-5
+194,Tottenham,West Brom,1–0,12-3-3,6-4-9
+195,Manchester City,Liverpool,3–0,14-3-2,9-7-3
+196,Wigan Athletic,Sunderland,1–4,3-6-10,5-6-8
+197,Everton,Bolton,1–2,7-3-8,4-1-14
+198,Newcastle Utd,Manchester Utd,3–0,8-6-5,14-3-2
+199,Tottenham,Everton,2–0,13-3-3,7-3-9
+200,Chelsea,Sunderland,1–0,11-4-5,6-6-8
+201,Tottenham,Wolves,1–1,14-3-3,4-5-11
+202,West Brom,Norwich City,1–2,6-4-10,6-7-7
+203,Liverpool,Stoke City,0–0,9-7-4,8-5-7
+204,Manchester Utd,Bolton,3–0,14-3-3,5-1-14
+205,Blackburn,Fulham,3–1,3-5-12,5-8-7
+206,Aston Villa,Everton,1–1,5-8-7,7-3-10
+207,Swansea City,Arsenal,3–2,5-8-7,11-3-6
+208,Newcastle Utd,QPR,1–0,9-6-5,4-5-11
+209,Wigan Athletic,Manchester City,0–1,3-6-11,15-3-2
+210,Bolton,Liverpool,3–1,5-1-15,9-8-4
+211,Everton,Blackburn,1–1,7-4-10,4-5-12
+212,Fulham,Newcastle Utd,5–2,5-8-8,10-6-5
+213,Norwich City,Chelsea,0–0,7-7-7,12-4-5
+214,Stoke City,West Brom,1–2,8-6-7,6-4-11
+215,Sunderland,Swansea City,2–0,6-6-9,6-8-7
+216,Wolves,Aston Villa,2–3,4-6-11,5-9-7
+217,QPR,Wigan Athletic,3–1,4-5-12,3-6-12
+218,Arsenal,Manchester Utd,1–2,11-3-7,15-3-3
+219,Manchester City,Tottenham,3–2,16-3-2,14-4-3
+220,Manchester Utd,Stoke City,2–0,16-3-3,8-6-8
+221,Everton,Manchester City,1–0,7-5-10,17-3-2
+222,Wolves,Liverpool,0–3,4-6-12,9-8-5
+223,Tottenham,Wigan Athletic,3–1,14-4-4,3-6-13
+224,Swansea City,Chelsea,1–1,6-8-8,12-5-5
+225,Sunderland,Norwich City,3–0,7-6-9,7-8-7
+226,Fulham,West Brom,1–1,6-8-8,7-4-11
+227,Aston Villa,QPR,2–2,6-9-7,5-5-12
+228,Bolton,Arsenal,0–0,6-1-15,11-3-8
+229,Blackburn,Newcastle Utd,0–2,4-6-12,10-6-6
+230,Stoke City,Sunderland,0–1,8-6-9,8-6-9
+231,Arsenal,Blackburn,7–1,11-4-8,4-6-13
+232,Wigan Athletic,Everton,1–1,3-6-14,8-5-10
+233,Norwich City,Bolton,2–0,7-8-8,6-2-15
+234,Manchester City,Fulham,3–0,17-3-3,6-9-8
+235,QPR,Wolves,1–2,5-6-12,4-6-13
+236,West Brom,Swansea City,1–2,7-5-11,6-9-8
+237,Newcastle Utd,Aston Villa,2–1,11-6-6,6-10-7
+238,Chelsea,Manchester Utd,3–3,12-6-5,17-3-3
+239,Liverpool,Tottenham,0–0,10-8-5,15-4-4
+240,Sunderland,Arsenal,1–2,9-6-9,12-4-8
+241,Blackburn,QPR,3–2,4-6-14,5-6-13
+242,Fulham,Stoke City,2–1,6-9-9,8-6-10
+243,Bolton,Wigan Athletic,1–2,6-2-16,3-7-14
+244,Manchester Utd,Liverpool,2–1,17-4-3,10-9-5
+245,Swansea City,Norwich City,2–3,7-9-8,8-8-8
+246,Everton,Chelsea,2–0,8-6-10,12-7-5
+247,Tottenham,Newcastle Utd,5–0,15-5-4,12-6-6
+248,Aston Villa,Manchester City,0–1,6-10-8,18-3-3
+249,Wolves,West Brom,1–5,5-6-13,7-5-12
+250,Manchester City,Blackburn,3–0,19-3-3,5-6-14
+251,Newcastle Utd,Wolves,2–2,12-6-7,5-6-14
+252,Chelsea,Bolton,3–0,12-7-6,6-2-17
+253,Wigan Athletic,Aston Villa,0–0,4-7-14,6-10-9
+254,QPR,Fulham,0–1,5-6-14,7-9-9
+255,West Brom,Sunderland,4–0,8-5-12,9-6-10
+256,Norwich City,Manchester Utd,1–2,9-8-8,18-4-3
+257,Arsenal,Tottenham,5–2,13-4-8,16-5-4
+258,Stoke City,Swansea City,2–0,8-6-11,7-9-9
+259,West Brom,Chelsea,1–0,9-5-12,13-7-6
+260,QPR,Everton,1–1,5-6-15,9-6-10
+261,Liverpool,Arsenal,1–2,10-9-6,14-4-8
+262,Wigan Athletic,Swansea City,0–2,4-8-14,7-9-10
+263,Stoke City,Norwich City,1–0,9-6-11,9-8-9
+264,Blackburn,Aston Villa,1–1,5-6-15,6-11-9
+265,Manchester City,Bolton,2–0,20-3-3,6-2-18
+266,Fulham,Wolves,5–0,8-9-9,5-7-14
+267,Newcastle Utd,Sunderland,1–1,12-7-7,9-6-11
+268,Tottenham,Manchester Utd,1–3,16-5-5,19-4-3
+269,Wolves,Blackburn,0–2,5-7-15,5-7-15
+270,Sunderland,Liverpool,1–0,9-7-11,10-9-7
+271,Aston Villa,Fulham,1–0,6-12-9,9-9-9
+272,Bolton,QPR,2–1,6-2-19,5-7-15
+273,Chelsea,Stoke City,1–0,13-7-7,10-6-11
+274,Everton,Tottenham,1–0,9-7-10,16-5-6
+275,Manchester Utd,West Brom,2–0,20-4-3,10-5-12
+276,Swansea City,Manchester City,1–0,8-9-10,21-3-3
+277,Norwich City,Wigan Athletic,1–1,9-8-10,4-8-15
+278,Arsenal,Newcastle Utd,2–1,15-4-8,12-8-7
+279,Liverpool,Everton,3–0,10-9-8,10-7-10
+280,Fulham,Swansea City,0–3,9-9-10,9-9-10
+281,Wigan Athletic,West Brom,1–1,4-9-15,10-5-13
+282,Wolves,Manchester Utd,0–5,5-7-16,21-4-3
+283,Newcastle Utd,Norwich City,1–0,12-8-8,9-9-10
+284,Blackburn,Sunderland,2–0,6-7-15,10-7-11
+285,Manchester City,Chelsea,2–1,21-3-4,14-7-7
+286,Everton,Arsenal,0–1,10-7-11,16-4-8
+287,Tottenham,Stoke City,1–1,16-5-7,10-6-12
+288,QPR,Liverpool,3–2,5-7-16,11-9-8
+289,Sunderland,QPR,3–1,10-7-12,6-7-16
+290,Chelsea,Tottenham,0–0,14-7-8,16-6-7
+291,Arsenal,Aston Villa,3–0,17-4-8,7-12-9
+292,Norwich City,Wolves,2–1,9-9-11,5-7-17
+293,Stoke City,Manchester City,1–1,10-7-12,22-3-4
+294,Liverpool,Wigan Athletic,1–2,11-9-9,4-10-15
+295,Bolton,Blackburn,2–1,7-2-19,7-7-15
+296,Swansea City,Everton,0–2,10-9-10,10-7-12
+297,West Brom,Newcastle Utd,1–3,10-6-13,13-8-8
+298,Manchester Utd,Fulham,1–0,22-4-3,9-9-11
+299,QPR,Arsenal,2–1,6-7-17,18-4-8
+300,Fulham,Norwich City,2–1,9-9-12,10-9-11
+301,Wigan Athletic,Stoke City,2–0,5-10-15,10-8-12
+302,Everton,West Brom,2–0,11-7-12,10-6-14
+303,Wolves,Bolton,2–3,5-7-18,8-2-19
+304,Aston Villa,Chelsea,2–4,7-12-10,14-8-8
+305,Manchester City,Sunderland,3–3,22-4-4,11-7-12
+306,Newcastle Utd,Liverpool,2–0,14-8-8,11-9-10
+307,Tottenham,Swansea City,3–1,16-7-7,10-9-11
+308,Blackburn,Manchester Utd,0–2,7-7-16,23-4-3
+309,Swansea City,Newcastle Utd,0–2,10-9-12,15-8-8
+310,Norwich City,Everton,2–2,10-9-12,12-7-12
+311,Stoke City,Wolves,2–1,10-8-13,5-7-19
+312,Sunderland,Tottenham,0–0,11-8-12,17-7-7
+313,West Brom,Blackburn,3–0,10-6-15,7-7-17
+314,Bolton,Fulham,0–3,9-2-19,10-9-12
+315,Liverpool,Aston Villa,1–1,11-9-11,7-12-11
+316,Chelsea,Wigan Athletic,2–1,15-8-8,6-10-15
+317,Arsenal,Manchester City,1–0,18-4-9,22-5-4
+318,Manchester Utd,QPR,2–0,24-4-3,7-7-17
+319,Tottenham,Norwich City,1–2,17-8-7,10-10-12
+320,Aston Villa,Stoke City,1–1,7-13-11,11-8-13
+321,Everton,Sunderland,4–0,12-8-12,11-9-12
+322,Fulham,Chelsea,1–1,11-9-12,16-8-8
+323,Newcastle Utd,Bolton,2–0,16-8-8,9-2-20
+324,Blackburn,Liverpool,2–3,7-7-18,11-10-11
+325,Wolves,Arsenal,0–3,5-7-20,19-4-9
+326,QPR,Swansea City,3–0,7-7-18,10-9-13
+327,Manchester City,West Brom,4–0,22-5-5,11-6-15
+328,Wigan Athletic,Manchester Utd,1–0,6-10-16,25-4-3
+329,Norwich City,Manchester City,1–6,11-10-12,23-5-5
+330,Swansea City,Blackburn,3–0,10-9-14,7-7-19
+331,West Brom,QPR,1–0,11-6-16,8-7-18
+332,Sunderland,Wolves,0–0,11-9-13,5-7-21
+333,Manchester Utd,Aston Villa,4–0,25-4-4,7-14-11
+334,Arsenal,Wigan Athletic,1–2,20-4-9,7-10-16
+335,QPR,Tottenham,1–0,8-7-19,17-8-8
+336,Fulham,Wigan Athletic,2–1,11-10-12,8-10-16
+337,Bolton,Swansea City,1–1,9-2-21,11-9-14
+338,Newcastle Utd,Stoke City,3–0,17-8-8,11-9-13
+339,Arsenal,Chelsea,0–0,20-4-10,16-9-8
+340,Aston Villa,Sunderland,0–0,7-14-12,11-10-13
+341,Blackburn,Norwich City,2–0,7-7-20,11-10-13
+342,Wolves,Manchester City,0–2,5-8-21,24-5-5
+343,Manchester Utd,Everton,4–4,26-4-4,13-8-12
+344,Liverpool,West Brom,0–1,12-10-11,12-6-16
+345,Aston Villa,Bolton,1–2,7-15-12,9-3-21
+346,Stoke City,Arsenal,1–1,11-9-14,20-5-10
+347,Norwich City,Liverpool,0–3,11-10-14,12-10-12
+348,Sunderland,Bolton,2–2,11-11-13,10-3-21
+349,Everton,Fulham,4–0,13-9-12,12-10-12
+350,Swansea City,Wolves,4–4,11-10-14,5-8-22
+351,West Brom,Aston Villa,0–0,13-6-16,7-15-13
+352,Wigan Athletic,Newcastle Utd,4–0,8-10-17,18-8-8
+353,Chelsea,QPR,6–1,16-10-8,9-7-19
+354,Tottenham,Blackburn,2–0,17-8-9,8-7-20
+355,Manchester City,Manchester Utd,1–0,25-5-5,26-5-4
+356,Liverpool,Fulham,0–1,13-10-12,12-10-13
+357,Stoke City,Everton,1–1,11-10-14,14-9-12
+358,Bolton,Tottenham,1–4,10-4-21,18-8-9
+359,Chelsea,Newcastle Utd,0–2,17-10-8,18-8-9
+360,Arsenal,Norwich City,3–3,20-6-10,11-10-15
+361,Manchester Utd,Swansea City,2–0,26-5-5,11-11-14
+362,Wolves,Everton,0–0,5-9-22,14-10-12
+363,Fulham,Sunderland,2–1,13-10-13,11-12-13
+364,Newcastle Utd,Manchester City,0–2,19-8-9,26-5-5
+365,Aston Villa,Tottenham,1–1,7-16-13,19-8-9
+366,Bolton,West Brom,2–2,10-4-22,13-7-16
+367,QPR,Stoke City,1–0,9-7-20,11-11-14
+368,Blackburn,Wigan Athletic,0–1,8-7-21,9-10-17
+369,Liverpool,Chelsea,4–1,13-10-13,17-10-9
+370,Norwich City,Aston Villa,2–0,11-11-15,7-17-13
+371,Sunderland,Manchester Utd,0–1,11-12-14,27-5-5
+372,Tottenham,Fulham,2–0,19-9-9,14-10-13
+373,West Brom,Arsenal,2–3,13-8-16,20-7-10
+374,Chelsea,Blackburn,2–1,17-10-10,8-7-22
+375,Wigan Athletic,Wolves,3–2,10-10-17,5-10-22
+376,Everton,Newcastle Utd,3–1,14-11-12,19-8-10
+377,Swansea City,Liverpool,1–0,11-11-15,14-10-13
+378,Stoke City,Bolton,2–2,11-11-15,10-5-22
+379,Manchester City,QPR,3–2,27-5-5,10-7-20
