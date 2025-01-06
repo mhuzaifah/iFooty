@@ -14,7 +14,6 @@ port = os.getenv("DB_PORT")
 dbPass = os.getenv("DB_PASS")
 
 
-
 # Function to update PostgreSQL database's Team Table
 def updateTeamTable(df):
     
@@ -149,9 +148,9 @@ def main():
     """
 
     try:
-        # playersDf, teamsDf = getTeamAndPlayerData()
-        playersDf = pd.read_csv('pl_players.csv')
-        teamsDf = pd.read_csv('pl_teams.csv')
+        playersDf, teamsDf = getTeamAndPlayerData()
+        # playersDf = pd.read_csv('pl_players.csv')
+        # teamsDf = pd.read_csv('pl_teams.csv')
         updatePlayerTable(playersDf) 
         updateTeamTable(teamsDf) 
         print("PL Team and Player DB updates successful!")
