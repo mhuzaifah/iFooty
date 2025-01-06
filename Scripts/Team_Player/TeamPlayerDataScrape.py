@@ -92,7 +92,7 @@ def getTeamAndPlayerData():
     players_df = players_df.loc[:, ~players_df.columns.duplicated()] # retain only the first occurrence of each column
     players_df.rename(columns={'':'team'}, inplace=True) # naming Team column
     players_df.index.name = 'id' # naming index column
-    players_df.to_csv('pl_players.csv')
+    players_df.to_csv('pl_players.csv', index=False)
 
     teams_df = pd.DataFrame(pl_teams, index=teams)
     teams_df.index.name = 'name' # naming index column
