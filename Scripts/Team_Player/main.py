@@ -7,15 +7,6 @@ import pandas as pd
 if os.path.exists('.env'):
     load_dotenv()  # Only load .env file if it exists (local development)
     
-print("Environment variables types:")
-print(f"PORT type: {type(os.getenv('DB_PORT'))}, value length: {len(os.getenv('DB_PORT'))}")
-port_value = os.getenv('DB_PORT')
-try:
-    port = int(port_value)
-    print(f"Successfully converted port to int: {port}")
-except ValueError as e:
-    print(f"Failed to convert port value '{port_value}' to int")   
-    
 db = os.getenv("DB_NAME")
 user = os.getenv("DB_USER")
 host = os.getenv("DB_HOST")
@@ -108,9 +99,7 @@ def updatePlayerTable(df):
     
     # Loop through the rows in the DataFrame and update each row
     for _, row in df.iterrows():
-        
-        print(row)
-        
+                
         try:
             updateQuery = f"""
             UPDATE pl_players
