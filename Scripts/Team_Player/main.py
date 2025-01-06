@@ -2,14 +2,27 @@ import psycopg2
 import os
 from dotenv import load_dotenv
 from TeamPlayerDataScrape import getTeamAndPlayerData
+import pandas as pd
 
 if os.path.exists('.env'):
     load_dotenv()  # Only load .env file if it exists (local development)
+    
+print("Environment variables types:")
+print(f"PORT type: {type(os.getenv('DB_PORT'))}, value length: {len(os.getenv('DB_PORT'))}")
+port_value = os.getenv('DB_PORT')
+try:
+    port = int(port_value)
+    print(f"Successfully converted port to int: {port}")
+except ValueError as e:
+    print(f"Failed to convert port value '{port_value}' to int")   
+    
 db = os.getenv("DB_NAME")
 user = os.getenv("DB_USER")
 host = os.getenv("DB_HOST")
 port = os.getenv("DB_PORT")
 dbPass = os.getenv("DB_PASS")
+
+
 
 # Function to update PostgreSQL database's Team Table
 def updateTeamTable(df):
@@ -147,7 +160,9 @@ def main():
     """
 
     try:
-        playersDf, teamsDf = getTeamAndPlayerData()
+        # playersDf, teamsDf = getTeamAndPlayerData()
+        playersDf = pd.read_csv('pl_players.csv')
+        teamsDf = pd.read_csv('pl_teams.csv')
         updatePlayerTable(playersDf) 
         updateTeamTable(teamsDf) 
         print("PL Team and Player DB updates successful!")

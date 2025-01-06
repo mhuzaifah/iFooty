@@ -23,6 +23,15 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r Scripts/Team_Player/requirements.txt
 
+      - name: Debug environment variables
+        run: |
+          echo "DB_HOST is set: ${{ !env.DB_HOST == '' }}"
+          echo "DB_PORT is set: ${{ !env.DB_PORT == '' }}"
+          echo "DB_NAME is set: ${{ !env.DB_NAME == '' }}"
+          echo "DB_USER is set: ${{ !env.DB_USER == '' }}"
+          echo "Length of DB_HOST: ${#DB_HOST}"
+          echo "Length of DB_PORT: ${#DB_PORT}"
+
       - name: 🏃 Run the Script
         env:
             DB_NAME: ${{ secrets.DB_NAME }}
