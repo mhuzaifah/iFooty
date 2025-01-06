@@ -2,9 +2,9 @@ import psycopg2
 import os
 from dotenv import load_dotenv
 from TeamPlayerDataScrape import getTeamAndPlayerData
-import pandas as pd
 
-load_dotenv()
+if os.path.exists('.env'):
+    load_dotenv()  # Only load .env file if it exists (local development)
 db = os.getenv("DB_NAME")
 user = os.getenv("DB_USER")
 host = os.getenv("DB_HOST")
@@ -13,12 +13,6 @@ dbPass = os.getenv("DB_PASS")
 
 # Function to update PostgreSQL database's Team Table
 def updateTeamTable(df):
-    # Connecting to the database
-    db = os.environ['DB_NAME']
-    user = os.environ['DB_USER']
-    host = os.environ['DB_HOST']
-    port = os.environ['DB_PORT']
-    dbPass = os.environ['DB_PASS']
     
     conn = psycopg2.connect(
         database=db,
@@ -82,12 +76,6 @@ def updateTeamTable(df):
 
 # Function to update PostgreSQL database's Player Table
 def updatePlayerTable(df):
-    # Connecting to the database
-    db = os.environ['DB_NAME']
-    user = os.environ['DB_USER']
-    host = os.environ['DB_HOST']
-    port = os.environ['DB_PORT']
-    dbPass = os.environ['DB_PASS']
     
     conn = psycopg2.connect(
         database=db,
