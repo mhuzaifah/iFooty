@@ -23,6 +23,20 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r Scripts/Team_Player/requirements.txt
 
+      - name: Debug Environment Variables
+        run: |
+          echo "DB_NAME: $DB_NAME"
+          echo "DB_USER: $DB_USER"
+          echo "DB_HOST: $DB_HOST"
+          echo "DB_PORT: $DB_PORT"
+          echo "DB_PASSWORD is set: ${DB_PASSWORD:+yes}"
+        env:
+          DB_NAME: ${{ secrets.DB_NAME }}
+          DB_USER: ${{ secrets.DB_USER }}
+          DB_HOST: ${{ secrets.DB_HOST }}
+          DB_PORT: ${{ secrets.DB_PORT }}
+          DB_PASSWORD: ${{ secrets.DB_PASS }}
+
       - name: 🏃 Run the Script
         env:
             DB_NAME: ${{ secrets.DB_NAME }}
