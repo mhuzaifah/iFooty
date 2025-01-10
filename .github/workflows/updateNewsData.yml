@@ -1,0 +1,42 @@
+name: Automate News Data Update
+
+on:
+  schedule:
+    - cron: '0 1-23/2 * * *'
+  workflow_dispatch:      # Allows manual trigger
+
+jobs:
+  run-news-update-script:
+    runs-on: ubuntu-latest  # Use a virtual Ubuntu machine
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4  # Pulls your repository code
+
+      - name: 🐍 Set up Python Environment
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: 📦 Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r Scripts/News/requirements.txt
+
+      - name: 🏃 Run the Script
+        env:
+            DB_NAME: ${{ secrets.DB_NAME }}
+            DB_USER: ${{ secrets.DB_USER }}
+            DB_HOST: ${{ secrets.DB_HOST }}
+            DB_PASS: ${{ secrets.DB_PASS }}
+            DB_PORT: ${{ secrets.DB_PORT }}
+        run: |
+            python Scripts/News/NewsDataScrape.py
+
+      - name: ✅ Success Notification
+        if: success()
+        run: echo "Script ran successfully!"
+
+      - name: ❌ Failure Notification
+        if: failure()
+        run: echo "Script failed to run!"

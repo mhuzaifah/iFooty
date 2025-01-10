@@ -5,12 +5,9 @@ import re
 import newspaper
 from datetime import datetime, timedelta
 from pytz import utc
-import psycopg2
-from dotenv import load_dotenv
-import os
 
-load_dotenv(dotenv_path='../.env')
-
+# Gets news articles published during the past 24 hours for each team in the premier league
+# Logic is that this script runs every day, and when the new week starts, an automated query at the database level would remove all news so that each team has a fresh new news section
 def getNews():
     pl_news = {
             "title" : [],
@@ -34,11 +31,11 @@ def getNews():
     for teamURLName in teams:
         teamURLName: str
         teamName = " ".join([x.capitalize() for x in teamURLName.split('-')])
-        print(teamURLName, teamName)
+        # print(teamURLName, teamName)
         page = 1
         dayLimitReached = False
         while not dayLimitReached:
-            print(page)
+            # print(page)
             link = f'https://www.football365.com/{teamURLName}/news' if page == 1 else f'https://www.football365.com/{teamURLName}/page/{page}'
             html = requests.get(link).text
             soup = BeautifulSoup(html, 'lxml')
@@ -88,45 +85,5 @@ def getNews():
     news_df.to_csv('pl_news.csv')
     
     return news_df
-            
-def updateNewsTable(df):
-    
-    # Connecting to database
-    db_password = os.getenv('DB_PASSWORD')
-    conn = psycopg2.connect(database = "postgres", 
-                            user = "postgres.dfjdsrazcvveurtscvah", 
-                            host= 'aws-0-ca-central-1.pooler.supabase.com',
-                            password = "Huzi@1975@supabase",
-                            port = 6543)
-    curr = conn.cursor()   
-    
-    # Get Max id from table
-    maxIdQuery = "SELECT MAX(id) FROM pl_news"
-    curr.execute(maxIdQuery)
-    maxId = curr.fetchone()[0]
-    id = 0 if maxId is None else maxId+1 
-    
-    columns = df.columns.tolist() # Get columns of table
-    setClause = ', '.join(['id'] + columns) # Dynamically use column names to generate list for insert query
-    valuesClausePlaceholder = ', '.join(['%s'] * (len(columns)+1))
-    
-    # Loop through the rows in the DataFrame and insert
-    for _, row in df.iterrows():
         
-        # Generate the INSERT query for each row
-        insertQuery = f"""
-        INSERT INTO pl_news ({setClause})
-        VALUES ({valuesClausePlaceholder})
-        """
-                
-        values = [id] + row.tolist() # Collect all values in list to dynamically add to query
-        curr.execute(insertQuery, values) # Execute the query with the column values from the CSV
-        
-        id+=1 #increment id 
-        
-    conn.commit()
-    curr.close()
-    conn.close()
     
-newsDf = getNews()
-updateNewsTable(newsDf)
