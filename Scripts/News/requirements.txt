@@ -1,8 +1,8 @@
 pandas
 psycopg2-binary
 beautifulsoup4
-lxml
 requests
 python-dotenv
 newspaper3k
 pytz
+lxml_html_clean
