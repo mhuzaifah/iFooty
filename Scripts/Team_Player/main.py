@@ -142,22 +142,33 @@ def updatePlayerTable(df):
 
 
 def main():
-
     """
     Main function to scrape data and update the PostgreSQL database.
     """
-
     try:
+        print("Starting data collection...")
         playersDf, teamsDf = getTeamAndPlayerData()
-        # playersDf = pd.read_csv('pl_players.csv')
-        # teamsDf = pd.read_csv('pl_teams.csv')
-        updatePlayerTable(playersDf) 
-        updateTeamTable(teamsDf) 
+        
+        print("\nValidating DataFrames...")
+        print("Players DataFrame shape:", playersDf.shape if playersDf is not None else "None")
+        print("Teams DataFrame shape:", teamsDf.shape if teamsDf is not None else "None")
+        
+        print("\nFinal DataFrame validation:")
+        print("Players DataFrame shape:", playersDf.shape if playersDf is not None else "None")
+        print("Teams DataFrame shape:", teamsDf.shape if teamsDf is not None else "None")
+        print("\nPlayers DataFrame columns:", playersDf.columns.tolist() if playersDf is not None else "None")
+        print("Teams DataFrame columns:", teamsDf.columns.tolist() if teamsDf is not None else "None")
+        
+        print("\nUpdating Players DB...")
+        updatePlayerTable(playersDf)
+        print("\nUpdating Teams DB...")
+        updateTeamTable(teamsDf)
+            
         print("PL Team and Player DB updates successful!")
         
     except Exception as e:
-        print(f"Error occurred: {e}")
-        exit(1) # Exit with a non-zero status for GitHub Actions to register a failure
+        print(f"Error occurred: {str(e)}")
+        exit(1)
         
 if __name__ == "__main__":
     main()

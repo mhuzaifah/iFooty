@@ -96,18 +96,12 @@ def getTeamAndPlayerData():
 
     teams_df = pd.DataFrame(pl_teams, index=teams)
     teams_df.index.name = 'name' # naming index column
-    teams_df.to_csv('pl_teams.csv')
+    teams_df = teams_df.reset_index() # converts index to a regular column
+    teams_df.to_csv('pl_teams.csv', index=False)
     
     return players_df, teams_df
     
 
-
-        
-    
-
-
-
-
-
+getTeamAndPlayerData()
 
 
