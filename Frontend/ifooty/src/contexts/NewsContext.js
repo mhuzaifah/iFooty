@@ -7,9 +7,11 @@ export const NewsProvider = ({ children }) => {
 
     const [news, setNews] = useState([]);
 
+    const backendUrl = process.env.REACT_APP_SPRINGBOOT_URL;
+
     const getNews = async (teamName) => {
         try {
-            axios.get('http://localhost:8080/api/teams/news', {
+            axios.get(`${backendUrl}/api/teams/news`, {
                 params: {teamName: teamName}
             })
                 .then(response => {

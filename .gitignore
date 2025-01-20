@@ -2,3 +2,4 @@
 .env
 .secrets
 ML/env/
+Backend/src/main/resources/application.properties

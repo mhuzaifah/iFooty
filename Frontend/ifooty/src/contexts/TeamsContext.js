@@ -11,9 +11,11 @@ export const TeamsProvider = ({ children }) => {
     const [allTeams, setAllTeams] = useState([]);
     const [teamsForTable, setTeamsForTable] = useState([]);
 
+    const backendUrl = process.env.REACT_APP_SPRINGBOOT_URL;
+
     const getFilteredTeams = async (filters) => {
         try {
-            axios.get('http://localhost:8080/api/teams/filtered', {
+            axios.get(`${backendUrl}/api/teams/filtered`, {
                 params: filters
             })
             .then(response => {
@@ -27,7 +29,7 @@ export const TeamsProvider = ({ children }) => {
     //Right now only one league, must change when more leagues are introduced
     const getAllTeams = async () => {
         try {
-            axios.get('http://localhost:8080/api/teams')
+            axios.get(`${backendUrl}/api/teams/`)
                 .then(response => {
                     setAllTeams(response.data);
                 })
@@ -39,7 +41,7 @@ export const TeamsProvider = ({ children }) => {
     const getTeamsForTable = (teamName) => {
 
         try {
-            axios.get('http://localhost:8080/api/teams/forTable', {
+            axios.get(`${backendUrl}/api/teams/forTable`, {
                 params: {teamName: teamName}
             })
                 .then(response => {

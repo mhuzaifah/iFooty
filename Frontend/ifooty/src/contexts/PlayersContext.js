@@ -6,9 +6,11 @@ export const PlayersContext = createContext();
 export const PlayersProvider = ({ children }) => {
     const [players, setPlayers] = useState([]);
 
+    const backendUrl = process.env.REACT_APP_SPRINGBOOT_URL;
+
     const getPlayers = async (filters) => {
         try {
-            axios.get('http://localhost:8080/api/players/filtered', {
+            axios.get(`${backendUrl}/api/players/filtered`, {
                 params: filters
             })
                 .then(response => {
