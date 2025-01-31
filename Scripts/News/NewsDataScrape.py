@@ -31,11 +31,11 @@ def getNews():
     for teamURLName in teams:
         teamURLName: str
         teamName = " ".join([x.capitalize() for x in teamURLName.split('-')])
-        # print(teamURLName, teamName)
+        print(teamURLName, teamName)
         page = 1
         dayLimitReached = False
         while not dayLimitReached:
-            # print(page)
+            print(page)
             link = f'https://www.football365.com/{teamURLName}/news' if page == 1 else f'https://www.football365.com/{teamURLName}/page/{page}'
             html = requests.get(link).text
             soup = BeautifulSoup(html, 'lxml')
@@ -52,7 +52,8 @@ def getNews():
                     continue
 
                 timeTag = articleComponent.find('time')
-                if timeTag:
+                linkTag = articleComponent.find('a', href=True)
+                if timeTag and linkTag:
                     postTime = datetime.strptime(re.sub(r'(\d+)(st|nd|rd|th)', r'\1', timeTag['datatime']), "%A %d %B %Y %I:%M %p")
                     postTime = postTime.replace(tzinfo=utc) # localzing to UTC
 
@@ -62,8 +63,6 @@ def getNews():
 
                     pl_news['date'].append(postTime.date())
 
-                linkTag = articleComponent.find('a', href=True)
-                if linkTag:
                     article = newspaper.article(linkTag['href'])
                     title = article.title.replace('"', '')
                     pl_news['title'].append(title)

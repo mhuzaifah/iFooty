@@ -5,7 +5,6 @@ from NewsDataScrape import getNews
 
 # if os.path.exists('.env'):
 load_dotenv()  # Only load .env file if it exists (local development)
-    
 db = os.getenv("DB_NAME")
 user = os.getenv("DB_USER")
 host = os.getenv("DB_HOST")
