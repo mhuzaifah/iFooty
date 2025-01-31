@@ -9,9 +9,9 @@ import jakarta.persistence.Table;
 @Table(name="pl_players")
 public class Player {
 
+    //    private Integer id;
     @Id
-    @Column(name = "id", unique = true)
-    private Integer id;
+    @Column(name = "name", unique = true)
     private String name;
     private String nation;
     private String pos;
@@ -28,8 +28,7 @@ public class Player {
 
     public Player() {}
 
-    public Player(Integer id, String player, String nation, String pos, Double age, Double mp, Integer starts, Double mins, Double nineties, Double gls, Double ast, Double xG, Double xAG, String team) {
-        this.id = id;
+    public Player(String player, String nation, String pos, Double age, Double mp, Integer starts, Double mins, Double nineties, Double gls, Double ast, Double xG, Double xAG, String team) {
         this.name = player;
         this.nation = nation;
         this.pos = pos;
@@ -49,9 +48,9 @@ public class Player {
         return nation;
     }
 
-    public Integer getId() {
-        return id;
-    }
+//    public Integer getId() {
+//        return id;
+//    }
 
     public String getName() {
         return name;
