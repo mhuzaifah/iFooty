@@ -5,7 +5,7 @@ import playersHero from "../../images/playersHero.png";
 import clubsHero from "../../images/clubsHero.png";
 import newsHero from "../../images/newsHero.png";
 import predictsHero from "../../images/predictionsHero.png";
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useContext, useEffect} from 'react';
 import {Container, Row, Col, Button, Card, Image, FormSelect} from 'react-bootstrap';
 import {TeamsContext} from "../../contexts/TeamsContext";
 import {Link} from "react-router-dom";
@@ -18,7 +18,7 @@ const Landing = () => {
     useEffect(() => {
         if(league !== "")
             getAllTeams()
-    }, [league])
+    }, [league, getAllTeams])
 
     return (
         <Container fluid className="landingPageContainer">
@@ -61,7 +61,7 @@ const Landing = () => {
                                 <h3>Select a Team</h3>
                                 <div style={{width:'375px', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', gap:'10px'}} >
                                     <FormSelect value={league} onChange={(e) => setLeague(e.target.value)} >
-                                        <option value="" disabled selected >Choose a League...</option>
+                                        <option value="" disabled >Choose a League...</option>
                                         <option value="premierLeague" >Premier League</option>
                                     </FormSelect>
                                     <FormSelect

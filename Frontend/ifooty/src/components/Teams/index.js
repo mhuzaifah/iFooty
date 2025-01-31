@@ -6,6 +6,8 @@ import {TeamsContext} from "../../contexts/TeamsContext";
 import { FaFilter } from "react-icons/fa";
 import {chunk} from "lodash";
 import React from "react";
+import Loader from "../Loader/index.js";
+
 
 const Teams = () => {
 
@@ -79,7 +81,7 @@ const Teams = () => {
     }
 
     if (filteredTeams.length === 0) {
-        return <p>Loading...</p>;
+        return <Loader />;
     }
 
     return (

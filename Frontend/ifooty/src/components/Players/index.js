@@ -4,6 +4,7 @@ import {PlayersContext} from "../../contexts/PlayersContext";
 import {FaFilter} from "react-icons/fa";
 import "./index.css";
 import { chunk } from 'lodash';
+import Loader from "../Loader/index.js";
 
 
 const Players = () => {
@@ -128,7 +129,7 @@ const Players = () => {
     }
 
     if (players.length === 0) {
-        return <p>Loading...</p>;
+        return <Loader />;
     }
 
     return (

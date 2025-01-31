@@ -4,3 +4,6 @@
 ML/env/
 Backend/src/main/resources/application.properties
 Backend/target
+.csv
+Backend/target/classes/application.properties
+/Backend/target

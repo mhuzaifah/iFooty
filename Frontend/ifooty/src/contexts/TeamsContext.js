@@ -1,7 +1,6 @@
 import {createContext, useState} from 'react';
 import axios from 'axios';
 import {forEach} from "lodash";
-import teams from "../components/Teams";
 
 export const TeamsContext = createContext();
 
@@ -28,8 +27,9 @@ export const TeamsProvider = ({ children }) => {
 
     //Right now only one league, must change when more leagues are introduced
     const getAllTeams = async () => {
+        console.log(`${backendUrl}/api/teams`)
         try {
-            axios.get(`${backendUrl}/api/teams/`)
+            axios.get(`${backendUrl}/api/teams`)
                 .then(response => {
                     setAllTeams(response.data);
                 })
@@ -46,7 +46,6 @@ export const TeamsProvider = ({ children }) => {
             })
                 .then(response => {
                     const teamsData = response.data;
-                    console.log("Team Data", teamsData)
                     const teamsList = []
 
                     // Add pos value as attribute of a team during data scraping
@@ -55,7 +54,6 @@ export const TeamsProvider = ({ children }) => {
                         teamsList.push(team);
                     })
 
-                    console.log("Teams", teamsList);
                     setTeamsForTable(teamsList);
                 })
         } catch (error) {
