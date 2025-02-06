@@ -1,5 +1,9 @@
 /Users/muhammadhuzaifah/Desktop/iFooty/Backend/src/main/java/com/ifooty/IFootyApplication.java
 /Users/muhammadhuzaifah/Desktop/iFooty/Backend/src/main/java/com/ifooty/StartupApplicationListener.java
+/Users/muhammadhuzaifah/Desktop/iFooty/Backend/src/main/java/com/ifooty/fixture/Fixture.java
+/Users/muhammadhuzaifah/Desktop/iFooty/Backend/src/main/java/com/ifooty/fixture/FixtureController.java
+/Users/muhammadhuzaifah/Desktop/iFooty/Backend/src/main/java/com/ifooty/fixture/FixtureRepository.java
+/Users/muhammadhuzaifah/Desktop/iFooty/Backend/src/main/java/com/ifooty/fixture/FixtureService.java
 /Users/muhammadhuzaifah/Desktop/iFooty/Backend/src/main/java/com/ifooty/genai/GeminiConfiguration.java
 /Users/muhammadhuzaifah/Desktop/iFooty/Backend/src/main/java/com/ifooty/genai/GenAiService.java
 /Users/muhammadhuzaifah/Desktop/iFooty/Backend/src/main/java/com/ifooty/news/News.java

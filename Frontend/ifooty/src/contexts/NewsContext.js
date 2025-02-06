@@ -14,9 +14,9 @@ export const NewsProvider = ({ children }) => {
             axios.get(`${backendUrl}/api/teams/news`, {
                 params: {teamName: teamName}
             })
-                .then(response => {
-                    setNews(response.data);
-                })
+            .then(response => {
+                setNews(response.data);
+            })
         } catch(error) {
             console.log("Error fetching news:", error);
         }

@@ -1,9 +1,16 @@
 package com.ifooty.team;
-import com.ifooty.news.News;
-import jakarta.persistence.*;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import com.ifooty.news.News;
+
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name="pl_teams")
@@ -18,12 +25,14 @@ public class Team {
     private String awayRecord;
     private Integer goals;
     private Double goalsPerGame;
+    private Integer conceded;
+    private Double concededPerGame;
     @OneToMany(mappedBy = "team", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private List<News> news = new ArrayList<>();
 
     public Team() {}
 
-    public Team(String name, String record, Double pointsPerGame, String homeRecord, String awayRecord, Integer goals, Double goalsPerGame, List<News> news) {
+    public Team(String name, String record, Double pointsPerGame, String homeRecord, String awayRecord, Integer goals, Double goalsPerGame, Integer conceded, Double concededPerGame, List<News> news) {
         this.name = name;
         this.record = record;
         this.pointsPerGame = pointsPerGame;
@@ -31,6 +40,8 @@ public class Team {
         this.awayRecord = awayRecord;
         this.goals = goals;
         this.goalsPerGame = goalsPerGame;
+        this.conceded = conceded;
+        this.concededPerGame = concededPerGame;
         this.news = news;
     }
 
@@ -68,6 +79,14 @@ public class Team {
         return goalsPerGame;
     }
 
+    public Integer getConceded() {
+        return conceded;
+    }
+
+    public Double getConcededPerGame() {
+        return concededPerGame;
+    }
+
     public List<News> getNews() {
         return news;
     }
@@ -98,6 +117,14 @@ public class Team {
 
     public void setGoalsPerGame(Double goalsPerGame) {
         this.goalsPerGame = goalsPerGame;
+    }
+
+    public void setConceded(Integer conceded) {
+        this.conceded = conceded;
+    }
+
+    public void setConcededPerGame(Double concededPerGame) {
+        this.concededPerGame = concededPerGame;
     }
 
     public void setNews(List<News> news) {

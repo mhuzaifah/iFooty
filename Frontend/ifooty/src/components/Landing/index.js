@@ -16,8 +16,7 @@ const Landing = () => {
     const { league, setLeague, team, setTeam } = useContext(UserInfoContext);
     const { allTeams, getAllTeams } = useContext(TeamsContext);
     useEffect(() => {
-        if(league !== "")
-            getAllTeams()
+        getAllTeams()
     }, [league, getAllTeams])
 
     return (
@@ -26,8 +25,8 @@ const Landing = () => {
             <div className="navContainer" >
                 <Container className="nav" fluid >
                     <div className="logo">
-                        <Image src={Logo} alt='iFooty' style={{width:'45px', height:'45px'}}></Image>
-                        <h4 style={{margin:0}}>iFooty</h4>
+                        <Image src={Logo} alt='iPL' style={{width:'45px', height:'45px'}}></Image>
+                        <h4 style={{margin:0}}>iPL</h4>
                     </div>
                     <Button variant="dark" className="mainButton">Sign Up</Button>
                 </Container>
@@ -37,7 +36,7 @@ const Landing = () => {
             {/* Main content */}
             <Container className="sloganContainer">
                 <h1 className="mb-3" style={{ fontSize: '3rem', fontWeight: 'bold' }}>Track. Support. Celebrate</h1>
-                <p style={{ fontSize: '1.25rem', color: '#6c757d' }}>Everything you need to follow the beautiful game, all in one place.</p>
+                <p style={{ fontSize: '1.25rem', color: '#6c757d' }}>Everything you need to follow the premier league, all in one place.</p>
             </Container>
 
             {/* Cards */}
@@ -60,10 +59,10 @@ const Landing = () => {
                             <Card.Body className="cardBody" >
                                 <h3>Select a Team</h3>
                                 <div style={{width:'375px', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', gap:'10px'}} >
-                                    <FormSelect value={league} onChange={(e) => setLeague(e.target.value)} >
+                                    {/* <FormSelect value={league} onChange={(e) => setLeague(e.target.value)} >
                                         <option value="" disabled >Choose a League...</option>
                                         <option value="premierLeague" >Premier League</option>
-                                    </FormSelect>
+                                    </FormSelect> */}
                                     <FormSelect
                                         value={team.name}
                                         onChange={(e) => (

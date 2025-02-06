@@ -44,26 +44,39 @@ export const TeamsProvider = ({ children }) => {
             axios.get(`${backendUrl}/api/teams/forTable`, {
                 params: {teamName: teamName}
             })
-                .then(response => {
-                    const teamsData = response.data;
-                    const teamsList = []
+            .then(response => {
+                const teamsData = response.data;
+                const teamsList = []
 
-                    // Add pos value as attribute of a team during data scraping
-                    forEach(teamsData, (team, i) => {
-                        team = { ...teamsData[i], pos: i+1}
-                        teamsList.push(team);
-                    })
-
-                    setTeamsForTable(teamsList);
+                // Add pos value as attribute of a team during data scraping
+                forEach(teamsData, (team, i) => {
+                    team = { ...teamsData[i], pos: i+1}
+                    teamsList.push(team);
                 })
+
+                setTeamsForTable(teamsList);
+            })
         } catch (error) {
             console.log("Error fetching teams:", error);
         }
 
     }
 
+    const getTeamStat = async (teamName, stat) => {
+        try {
+            const response = await axios.get(`${backendUrl}/api/teams/${stat}`, {
+                params: { teamName: teamName }
+            });
+            console.log(response.data);
+            return response.data;
+        } catch(error) {
+            console.log("Error fetching team stat:", error);
+            throw error; 
+        }
+    }
+
     return (
-        <TeamsContext.Provider value={{ allTeams, getAllTeams, filteredTeams, getFilteredTeams, teamsForTable, getTeamsForTable}}>
+        <TeamsContext.Provider value={{ allTeams, getAllTeams, filteredTeams, getFilteredTeams, teamsForTable, getTeamsForTable, getTeamStat}}>
             {children}
         </TeamsContext.Provider>
     );

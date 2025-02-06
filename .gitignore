@@ -1,7 +1,7 @@
 .DS_Store
 .env
 .secrets
-ML/env/
+ML/myenv/
 Backend/src/main/resources/application.properties
 Backend/target
 .csv

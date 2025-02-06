@@ -11,31 +11,34 @@ import {PlayersProvider} from "./contexts/PlayersContext";
 import {TeamsProvider} from "./contexts/TeamsContext";
 import {NewsProvider} from "./contexts/NewsContext";
 import {UserInfoProvider} from "./contexts/UserInfoContext";
+import {FixtureProvider} from './contexts/FixturesContext';
 
 function App() {
 
     const location = useLocation();
 
     return (
-      <div className={`App ${location.pathname === '/' ? 'designBackground' : 'simpleBackground'}`}>
-          {location.pathname !== '/' && <VerticalNavBar />}
-          <Container className="mainContentContainer">
-              <UserInfoProvider>
-              <PlayersProvider>
-              <TeamsProvider>
-              <NewsProvider>
-                  <Routes>
-                      <Route index element={<Landing />} />
-                      <Route path="/myteam" element={<MyTeam />} />
-                      <Route path="/players" element={<Players />} />
-                      <Route path="/teams" element={<Teams />} />
-                  </Routes>
-              </NewsProvider>
-              </TeamsProvider>
-              </PlayersProvider>
-              </UserInfoProvider>
-          </Container>
-      </div>
+        <div className={`App ${location.pathname === '/' ? 'designBackground' : 'simpleBackground'}`}>
+            {location.pathname !== '/' && <VerticalNavBar />}
+            <Container className="mainContentContainer">
+                <UserInfoProvider>
+                <PlayersProvider>
+                <TeamsProvider>
+                <NewsProvider>
+                <FixtureProvider>
+                    <Routes>
+                        <Route index element={<Landing />} />
+                        <Route path="/myteam" element={<MyTeam />} />
+                        <Route path="/players" element={<Players />} />
+                        <Route path="/teams" element={<Teams />} />
+                    </Routes>
+                </FixtureProvider>
+                </NewsProvider>
+                </TeamsProvider>
+                </PlayersProvider>
+                </UserInfoProvider>
+            </Container>
+        </div>
     );
 }
 

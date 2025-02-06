@@ -1,13 +1,13 @@
 package com.ifooty.player;
 
-import jakarta.transaction.Transactional;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.RequestParam;
-
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import jakarta.transaction.Transactional;
 
 @Component
 public class PlayerService {
@@ -45,7 +45,7 @@ public class PlayerService {
         List<Player> players = playerRepository.findAll();
 
         //Remove this later since this will be handeled during scraping
-        players.stream().filter(player -> player.getName() != "Squad Total" && player.getName() != "Opponent Total");
+        // players.stream().filter(player -> player.getName().equalsIgnoreCase("Squad Total") && player.getName().equalsIgnoreCase("Opponent Total"));
 
         if(position != null) players = players.stream().filter(player -> player.getPos() != null && position.equalsIgnoreCase(player.getPos())).collect(Collectors.toList());
         if(name != null) players = players.stream().filter(player -> player.getName() != null && player.getName().toLowerCase().startsWith(name.toLowerCase())).collect(Collectors.toList());
