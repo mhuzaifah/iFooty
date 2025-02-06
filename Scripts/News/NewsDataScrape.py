@@ -34,8 +34,10 @@ def getNews():
         print(teamURLName, teamName)
         page = 1
         dayLimitReached = False
+        
+        num = 0
         while not dayLimitReached:
-            print(page)
+            print("Page:", page)
             link = f'https://www.football365.com/{teamURLName}/news' if page == 1 else f'https://www.football365.com/{teamURLName}/page/{page}'
             html = requests.get(link).text
             soup = BeautifulSoup(html, 'lxml')
@@ -57,7 +59,7 @@ def getNews():
                     postTime = datetime.strptime(re.sub(r'(\d+)(st|nd|rd|th)', r'\1', timeTag['datatime']), "%A %d %B %Y %I:%M %p")
                     postTime = postTime.replace(tzinfo=utc) # localzing to UTC
 
-                    if not dayAgo <= postTime <= scriptStart: # only want news from current week
+                    if not dayAgo <= postTime <= scriptStart: # only want news from past 24 hours
                         dayLimitReached = True
                         break
 
@@ -75,9 +77,13 @@ def getNews():
 
                 pl_news['team'].append(teamName)
                 pl_news['summary'].append('null')
+                
+                num+=1                
+                print(num)
 
             if page == 5: break # break for any weird cases causing search to reach 5+ pages
             page+=1 # if day limit not reached, we'll be continuing on to the next page
+            print(len(pl_news['title']))
             
     news_df = pd.DataFrame(pl_news)
     news_df.index.name = 'id'

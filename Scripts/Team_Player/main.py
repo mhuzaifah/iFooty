@@ -4,15 +4,12 @@ from dotenv import load_dotenv
 from TeamPlayerDataScrape import getTeamAndPlayerData
 import pandas as pd
 
-if os.path.exists('.env'):
-    load_dotenv()  # Only load .env file if it exists (local development)
-    
+load_dotenv()  # Only load .env file if it exists (local development)
 db = os.getenv("DB_NAME")
 user = os.getenv("DB_USER")
 host = os.getenv("DB_HOST")
 port = os.getenv("DB_PORT")
 dbPass = os.getenv("DB_PASS")
-
 
 # Function to update PostgreSQL database's Team Table
 def updateTeamTable(df):
@@ -93,8 +90,16 @@ def updatePlayerTable(df):
     df = df.replace({float('nan'): None})
     
     columns = df.columns.tolist()
-    setClause = ', '.join([f"{col} = %s" for col in columns if (col != 'name' and col != 'team')])
+    
+    # For updating, use only the non-key columns
+    updateColumns = [col for col in columns if col not in ['name', 'team']]
+    # Build the SET clause using updateColumns (not all columns)
+    setClause = ', '.join([f"{col} = %s" for col in updateColumns])
     whereClause = "name = %s AND team = %s"
+    
+    # For insert, we still need all the columns
+    insertColumns = columns
+    placeholders = ', '.join(['%s'] * len(columns))
     
     # Loop through the rows in the DataFrame and update each row
     for _, row in df.iterrows():
@@ -106,28 +111,29 @@ def updatePlayerTable(df):
             WHERE {whereClause}
             """
             
-            # Convert the row to a list, handling None values
-            values = [None if pd.isna(val) else val for val in row.iloc[1:-1].tolist()]
-            values.extend([row.iloc[0], row.iloc[-1]])  # Add name and team values
+            # Build update values for non-PK columns then add the PKs for the WHERE clause
+            updateValues = [row[col] if not pd.isna(row[col]) else None for col in updateColumns]
+            updateValues += [row['name'], row['team']]
             
-            # Insert if the record doesn't exist
-            insertQuery = f"""
-            INSERT INTO pl_players ({', '.join(columns)})
-            SELECT %s
-            WHERE NOT EXISTS (
-                SELECT 1 FROM pl_players 
-                WHERE name = %s AND team = %s
-            );
-            """
-            
-            # First try to update
-            curr.execute(updateQuery, values)
+            # Try to update first
+            curr.execute(updateQuery, updateValues)
             
             # If no rows were updated, insert the new record
             if curr.rowcount == 0:
-                all_values = [None if pd.isna(val) else val for val in row]
-                curr.execute(insertQuery, 
-                           [*all_values] + [row['name'], row['team']])
+                insertQuery = f"""
+                INSERT INTO pl_players ({', '.join(insertColumns)})
+                SELECT {placeholders}
+                WHERE NOT EXISTS (
+                    SELECT 1 FROM pl_players 
+                    WHERE name = %s AND team = %s
+                );
+                """
+                
+                # Build insert values for all columns, then add PK values for the subquery
+                insertValues = [row[col] if not pd.isna(row[col]) else None for col in insertColumns]
+                insertValues += [row['name'], row['team']]
+                
+                curr.execute(insertQuery, insertValues)
             
             conn.commit()
             
@@ -141,13 +147,18 @@ def updatePlayerTable(df):
     conn.close()
 
 
+
 def main():
     """
     Main function to scrape data and update the PostgreSQL database.
     """
     try:
         print("Starting data collection...")
-        playersDf, teamsDf = getTeamAndPlayerData()
+        # playersDf, teamsDf = getTeamAndPlayerData()
+        
+        #For Testing
+        playersDf = pd.read_csv('pl_players.csv')
+        teamsDf = pd.read_csv('pl_teams.csv')
         
         print("\nValidating DataFrames...")
         print("Players DataFrame shape:", playersDf.shape if playersDf is not None else "None")

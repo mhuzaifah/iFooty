@@ -13,7 +13,9 @@ def getTeamAndPlayerData():
         "home_record": [],
         "away_record": [],
         "goals" : [],
-        "goals_per_game" : []
+        "goals_per_game" : [],
+        "conceded" : [],
+        "conceded_per_game" : []
     }
     pl_players = []
 
@@ -64,6 +66,7 @@ def getTeamAndPlayerData():
         
         # Parsing each teams' necessary Team Stats
         pTags = soup.find_all('p')
+        
         club_stats_pTags = pTags[0:3] 
         for i in range(3):
             pTag = club_stats_pTags[i]
@@ -78,8 +81,12 @@ def getTeamAndPlayerData():
                 pl_teams["away_record"].append(splitText[1].split(':')[1])
             else:
                 goalsData = splitText[0].split(':')[1].split('(')
+                concededData = splitText[1].split(':')[1].split('(')
                 pl_teams["goals"].append(goalsData[0])
                 pl_teams["goals_per_game"].append(goalsData[1][0:goalsData[1].find('pergame')])
+                pl_teams["conceded"].append(concededData[0])
+                pl_teams["conceded_per_game"].append(concededData[1][0:concededData[1].find('pergame')])
+                
 
         # Sleep to improve scraping perfomance/accuracy
         time.sleep(5)
