@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-# CORS(app)
+CORS(app)                                                
 
 # Get relative path to model folder
 modelPath = os.path.join(os.path.dirname(__file__), 'model')
