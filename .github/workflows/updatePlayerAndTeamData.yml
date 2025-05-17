@@ -23,6 +23,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r Scripts/Team_Player/requirements.txt
 
+      - name: Install Playwright browsers (+OS deps)
+        run: |
+          python -m playwright install --with-deps chromium
+
       - name: 🏃 Run the Script
         env:
             DB_NAME: ${{ secrets.DB_NAME }}
