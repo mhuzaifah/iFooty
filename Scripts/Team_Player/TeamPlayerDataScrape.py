@@ -1,9 +1,11 @@
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Comment
 import pandas as pd
 import requests
 import time
 from io import StringIO
 import re
+from playwright.sync_api import sync_playwright
+
 
 def getTeamAndPlayerData():
     #Collections for storing scraped data and later converting to csv files
@@ -20,15 +22,29 @@ def getTeamAndPlayerData():
     pl_players = []
 
     #Parsing Website to get the current PL Table
-    html = requests.get('https://fbref.com/en/comps/9/Premier-League-Stats').text
-    soup = BeautifulSoup(html, 'lxml')
-    pl_table = soup.find_all('table', class_='stats_table')[0]
+    print("Parsing Website to get the current PL Table...")
+    url = 'https://fbref.com/en/comps/9/Premier-League-Stats'
+    tables = []
+
+    # Using Playwright to scrape required table which is dynamically loaded via JS
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page()
+        page.goto(url, wait_until="domcontentloaded", timeout=60_000)
+        page.wait_for_selector('table.stats_table', timeout=60_000)
+        html = page.content()
+        soup = BeautifulSoup(html, 'html.parser') 
+        tables = soup.find_all('table', class_='stats_table')
+    pl_table = tables[0]
+    
 
     #Parsing PL Table to get all current teams' links
+    print("Parsing PL Table...")
     links = pl_table.find_all('a')
     links = [l.get('href') for l in links]
     links = [l for l in links if '/squads/' in l] #Only storing links related to squads
     plTeamUrls = [f"https://fbref.com{l}" for l in links]
+
 
     #Parsing each teams link to get required information/stats related to club
     teams = [] #list to keep track of teams for pl_teams.csv file indexes and news data scraping

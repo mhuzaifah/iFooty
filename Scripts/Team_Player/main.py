@@ -154,11 +154,11 @@ def main():
     """
     try:
         print("Starting data collection...")
-        # playersDf, teamsDf = getTeamAndPlayerData()
+        playersDf, teamsDf = getTeamAndPlayerData()
         
         #For Testing
-        playersDf = pd.read_csv('pl_players.csv')
-        teamsDf = pd.read_csv('pl_teams.csv')
+        # playersDf = pd.read_csv('pl_players.csv')
+        # teamsDf = pd.read_csv('pl_teams.csv')
         
         print("\nValidating DataFrames...")
         print("Players DataFrame shape:", playersDf.shape if playersDf is not None else "None")
