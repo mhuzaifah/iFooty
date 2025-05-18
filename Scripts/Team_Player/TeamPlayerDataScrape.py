@@ -47,6 +47,7 @@ def getTeamAndPlayerData():
 
 
     #Parsing each teams link to get required information/stats related to club
+    print("Parsing each teams link to get relevant information/stats...")
     teams = [] #list to keep track of teams for pl_teams.csv file indexes and news data scraping
     teamDict = {'Brighton and Hove Albion' : 'Brighton', 'Wolverhampton Wanderers' : 'Wolves'} # names of teams that are different in pl teams table (cause primary key errors)
     for placement in range(len(plTeamUrls)):
@@ -55,12 +56,21 @@ def getTeamAndPlayerData():
         teamURLName = teamUrl.split('/')[-1].replace('-Stats', '').replace('-',' ') # Getting the team url name
         teamName = teamDict.get(teamURLName) if teamURLName in teamDict else teamURLName # Choose the correct team name relative to pl teams table in database
         teams.append(teamName) # Append the team name to teams
-
-        data = requests.get(teamUrl).text
-        soup = BeautifulSoup(data, 'lxml')
+        
+        print("Parsing team: ", teamName)
 
         # Parsing each teams' Player Stats
-        player_stats_table = soup.find_all('table', class_='stats_table')[0]
+        tables = []
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            page = browser.new_page()
+            page.goto(teamUrl, wait_until="domcontentloaded", timeout=60_000)
+            page.wait_for_selector('table.stats_table', timeout=60_000)
+            html = page.content()
+            soup = BeautifulSoup(html, 'html.parser') 
+            tables = soup.find_all('table', class_='stats_table')
+        player_stats_table = tables[0]
+        
         players_data = pd.read_html(StringIO(str(player_stats_table)))[0]
         players_data['team'] = teamName
         players_data.rename(columns={'90s': 'nineties'}, inplace=True) #renaming 90s column 
@@ -75,20 +85,29 @@ def getTeamAndPlayerData():
         players_data.rename(columns={ 'Pos' : 'pos' }, inplace=True) #renaming Pos column 
         players_data.rename(columns={ 'Gls' : 'gls' }, inplace=True) #renaming Gls column 
         players_data.rename(columns={ 'Ast' : 'ast' }, inplace=True) #renaming Ast column 
-        players_data[('Unnamed: 3_level_0', 'age')] = players_data[('Unnamed: 3_level_0', 'age')].apply(lambda x: x.split('-')[0] if isinstance(x, str) else x) #adjusting the age information
-        players_data[('Unnamed: 1_level_0', 'nation')] = players_data[('Unnamed: 1_level_0', 'nation')].apply(lambda x: x.split(' ')[1] if isinstance(x, str) else x) #adjusting the nation information 
-        players_data = players_data.drop(players_data.tail(2).index) #removing last 2 rows (irrelavant information)
+        
+        # print("Players Data Table:")
+        # print(players_data)
+        
+        # Cleaning the players data table
+        players_data = players_data.dropna(subset=[('Unnamed: 0_level_0', 'name')]).reset_index(drop=True) #removing rows with no player name
+        players_data = players_data[players_data[('Unnamed: 0_level_0', 'name')] != 'Player'].reset_index(drop=True) #removing rows with 'Player' in name column
+        players_data = players_data.drop(players_data.tail(2).index) #removing last 2 rows (irrelavant information) 
+        players_data[('Unnamed: 3_level_0', 'age')] = players_data[('Unnamed: 3_level_0', 'age')].apply(lambda x: x.split('-')[0] if (isinstance(x, str) and '-' in x) else x) #adjusting the age information
+        players_data[('Unnamed: 1_level_0', 'nation')] = players_data[('Unnamed: 1_level_0', 'nation')].apply(lambda x: x.split(' ')[1] if (isinstance(x, str) and ' ' in x) else x) #adjusting the nation information 
+        
         pl_players.append(players_data)
         
         # Parsing each teams' necessary Team Stats
-        pTags = soup.find_all('p')
-        
+        metaDiv = soup.find('div', id='meta')
+        pTags = metaDiv.find_all('p')
         club_stats_pTags = pTags[0:3] 
+        
         for i in range(3):
             pTag = club_stats_pTags[i]
             text = re.sub(r'[ \n]', '', pTag.get_text())
             splitText = text.split(',')
-
+            
             if i == 0:
                 pl_teams["record"].append(splitText[0].split(':')[1])
                 pl_teams["points_per_game"].append(splitText[1][splitText[1].find('(')+1:splitText[1].find('pergame')])
